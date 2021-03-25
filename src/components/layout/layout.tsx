@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+//@ts-ignore
 import emergence from 'emergence.js'
 
 import Navibar from '../navibar/navibar'

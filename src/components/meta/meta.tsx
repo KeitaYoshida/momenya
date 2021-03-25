@@ -1,6 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { withPrefix } from 'gatsby'
 
+//@ts-ignore
 import { SiteSiteMetadata } from '../../../types/graphql-types'
 
 interface Props {
@@ -43,7 +45,16 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
           content: `${siteUrl}/img/profile.jpg`,
         },
       ]}
-    />
+    >
+      {/* <script
+        src={withPrefix('../../assets/scripts/jquery.min.js')}
+        type="text/javascript"
+      /> */}
+      {/* <script
+        src={withPrefix('../../assets/zanimation.js')}
+        type="text/javascript"
+      /> */}
+    </Helmet>
   )
 }
 export default Meta

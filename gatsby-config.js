@@ -88,7 +88,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-twitter',
-    "gatsby-plugin-typegen",
+    'gatsby-plugin-typegen',
     'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
   ],

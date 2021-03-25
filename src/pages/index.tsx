@@ -1,10 +1,12 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 
+//@ts-ignore
 import { IndexQueryQuery, PostByPathQuery } from '../../types/graphql-types'
 import Post from '../templates/post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
+import Service from '../components/service/service-inpage'
 
 interface Props {
   data: IndexQueryQuery
@@ -18,6 +20,7 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
   return (
     <Layout location={location}>
       <Meta site={meta} />
+      <Service />
       {posts.map((post, i) => (
         <Post
           data={post as PostByPathQuery}

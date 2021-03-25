@@ -1,0 +1,215 @@
+@import "./override-style.scss";
+
+$primay-color : #9c2d38;
+.background-primary {
+  // background-color: #2A3855 !important;
+  background-color: $primay-color !important;
+}
+.color-primary {
+  color: $primay-color !important;
+}
+.color-warning {
+  color: #FDD428 !important;
+}
+.color-white {
+  color: white !important;
+}
+
+h1 {
+  letter-spacing: 0;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  color: $primay-color;
+  font-weight: 600;
+}
+.btn-outline-primary {
+    color: $primay-color;
+    background-image: none;
+    background-color: transparent;
+    border-color: $primay-color;
+}
+ hr {
+    border: none;
+    background-color: $primay-color;
+    border-width: 3px;
+    max-width: 50px;
+}
+svg {
+  color: $primay-color;
+}
+.fs--1 {
+  font-size: 0.75019rem !important;
+}
+
+.fs-0 {
+  font-size: 1rem !important;
+}
+
+.fs-1 {
+  font-size: 1.333rem !important;
+}
+
+.fs-2 {
+  font-size: 1.77689rem !important;
+}
+
+.fs-3 {
+  font-size: 2.36859rem !important;
+}
+
+.fs-4 {
+  font-size: 3.15733rem !important;
+}
+
+.fs-5 {
+  font-size: 4.20873rem !important;
+}
+
+.fs-6 {
+  font-size: 5.61023rem !important;
+}
+
+.fs-7 {
+  font-size: 7.47844rem !important;
+}
+
+.fs-8 {
+  font-size: 9.96876rem !important;
+}
+
+@media (min-width: 36em) {
+  .fs-sm--1 {
+    font-size: 0.75019rem !important;
+  }
+  .fs-sm-0 {
+    font-size: 1rem !important;
+  }
+  .fs-sm-1 {
+    font-size: 1.333rem !important;
+  }
+  .fs-sm-2 {
+    font-size: 1.77689rem !important;
+  }
+  .fs-sm-3 {
+    font-size: 2.36859rem !important;
+  }
+  .fs-sm-4 {
+    font-size: 3.15733rem !important;
+  }
+  .fs-sm-5 {
+    font-size: 4.20873rem !important;
+  }
+  .fs-sm-6 {
+    font-size: 5.61023rem !important;
+  }
+  .fs-sm-7 {
+    font-size: 7.47844rem !important;
+  }
+  .fs-sm-8 {
+    font-size: 9.96876rem !important;
+  }
+}
+
+@media (min-width: 48em) {
+  .fs-md--1 {
+    font-size: 0.75019rem !important;
+  }
+  .fs-md-0 {
+    font-size: 1rem !important;
+  }
+  .fs-md-1 {
+    font-size: 1.333rem !important;
+  }
+  .fs-md-2 {
+    font-size: 1.77689rem !important;
+  }
+  .fs-md-3 {
+    font-size: 2.36859rem !important;
+  }
+  .fs-md-4 {
+    font-size: 3.15733rem !important;
+  }
+  .fs-md-5 {
+    font-size: 4.20873rem !important;
+  }
+  .fs-md-6 {
+    font-size: 5.61023rem !important;
+  }
+  .fs-md-7 {
+    font-size: 7.47844rem !important;
+  }
+  .fs-md-8 {
+    font-size: 9.96876rem !important;
+  }
+}
+
+@media (min-width: 62em) {
+  .fs-lg--1 {
+    font-size: 0.75019rem !important;
+  }
+  .fs-lg-0 {
+    font-size: 1rem !important;
+  }
+  .fs-lg-1 {
+    font-size: 1.333rem !important;
+  }
+  .fs-lg-2 {
+    font-size: 1.77689rem !important;
+  }
+  .fs-lg-3 {
+    font-size: 2.36859rem !important;
+  }
+  .fs-lg-4 {
+    font-size: 3.15733rem !important;
+  }
+  .fs-lg-5 {
+    font-size: 4.20873rem !important;
+  }
+  .fs-lg-6 {
+    font-size: 5.61023rem !important;
+  }
+  .fs-lg-7 {
+    font-size: 7.47844rem !important;
+  }
+  .fs-lg-8 {
+    font-size: 9.96876rem !important;
+  }
+}
+
+@media (min-width: 75em) {
+  .fs-xl--1 {
+    font-size: 0.75019rem !important;
+  }
+  .fs-xl-0 {
+    font-size: 1rem !important;
+  }
+  .fs-xl-1 {
+    font-size: 1.333rem !important;
+  }
+  .fs-xl-2 {
+    font-size: 1.77689rem !important;
+  }
+  .fs-xl-3 {
+    font-size: 2.36859rem !important;
+  }
+  .fs-xl-4 {
+    font-size: 3.15733rem !important;
+  }
+  .fs-xl-5 {
+    font-size: 4.20873rem !important;
+  }
+  .fs-xl-6 {
+    font-size: 5.61023rem !important;
+  }
+  .fs-xl-7 {
+    font-size: 7.47844rem !important;
+  }
+  .fs-xl-8 {
+    font-size: 9.96876rem !important;
+  }
+}

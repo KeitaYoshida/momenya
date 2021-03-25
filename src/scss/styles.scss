@@ -1,0 +1,32 @@
+@import "src/com-style";
+
+#top-info-home {
+  min-height: 1rem;
+}
+#top-navigation {
+  section  {
+    min-height: 1rem;
+  }
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#main-navi {
+  border-bottom: 1px solid $primay-color;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(3px);
+  .dropdown-menu {
+    border:none;
+  }
+  .dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.9);
+    animation: show 0.2s linear 0s;
+  }
+}
