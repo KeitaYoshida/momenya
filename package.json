@@ -11,6 +11,7 @@
     "animate.css": "4.1.1",
     "bootstrap": "4.6.0",
     "emergence.js": "1.1.2",
+    "filters.css": "^1.0.0",
     "font-awesome": "4.7.0",
     "framer-motion": "^4.0.3",
     "gatsby": "3.1.2",
@@ -62,7 +63,8 @@
     "textlint": "11.9.0",
     "textlint-rule-preset-ja-spacing": "2.0.2",
     "textlint-rule-preset-japanese": "5.0.0",
-    "typescript": "4.2.3"
+    "typescript": "4.2.3",
+    "webpack-cli": "^4.6.0"
   },
   "keywords": [
     "gatsby",

@@ -2,7 +2,12 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-import { faGasPump } from '@fortawesome/free-solid-svg-icons'
+import {
+  faGasPump,
+  faWrench,
+  faToolbox,
+  faComments,
+} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import 'src/com-style.scss'
@@ -76,10 +81,13 @@ const ServiceInPage: React.FC = () => {
           <MotionBox>
             <div
               className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
-              data-zanim='{"trigger":"scroll"}'
               style={{ height: 100, width: 100 }}
             >
-              <span className="icon-Clock fs-3 color-blueish mx-auto fw-600"></span>
+              {/* <span className="icon-Bar-Chart5 fs-3 color-blueish mx-auto fw-600"></span> */}
+              <FontAwesomeIcon
+                icon={faWrench}
+                className="fs-3 color-blueish mx-auto fw-600"
+              />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               Risk Management
@@ -92,10 +100,13 @@ const ServiceInPage: React.FC = () => {
           <MotionBox>
             <div
               className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
-              data-zanim='{"trigger":"scroll"}'
               style={{ height: 100, width: 100 }}
             >
-              <span className="icon-Idea-2 fs-3 color-blueish mx-auto fw-600"></span>
+              {/* <span className="icon-Bar-Chart5 fs-3 color-blueish mx-auto fw-600"></span> */}
+              <FontAwesomeIcon
+                icon={faToolbox}
+                className="fs-3 color-blueish mx-auto fw-600"
+              />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               Market Research
@@ -108,10 +119,13 @@ const ServiceInPage: React.FC = () => {
           <MotionBox>
             <div
               className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
-              data-zanim='{"trigger":"scroll"}'
               style={{ height: 100, width: 100 }}
             >
-              <span className="icon-Headset fs-3 color-blueish mx-auto fw-600"></span>
+              {/* <span className="icon-Bar-Chart5 fs-3 color-blueish mx-auto fw-600"></span> */}
+              <FontAwesomeIcon
+                icon={faComments}
+                className="fs-3 color-blueish mx-auto fw-600"
+              />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               Quality Services

@@ -7,6 +7,7 @@ import Post from '../templates/post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 import Service from '../components/service/service-inpage'
+import TopSlider from 'src/components/home-top/top-slider'
 
 interface Props {
   data: IndexQueryQuery
@@ -20,6 +21,7 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
   return (
     <Layout location={location}>
       <Meta site={meta} />
+      <TopSlider />
       <Service />
       {posts.map((post, i) => (
         <Post

@@ -46,9 +46,9 @@ const Links: React.FC<NavLink> = ({ list }: NavLink) => {
 }
 
 const info: ShopInfo = {
-  address: '1010 Avenue, New York, NY 10018 US.',
-  open: 'Mon-Sat, 8.00-18.00. Sunday CLOSED',
-  tell: '212 386 5575, 212 386 5576',
+  address: '長野県下伊那郡下條村睦沢９３０４−１',
+  open: '月-日, 7.00-20.00',
+  tell: '0260-27-2235',
 }
 
 const InfoNav: React.FC = () => {
@@ -68,7 +68,7 @@ const InfoNav: React.FC = () => {
           <div className="col-auto ml-md-auto order-md-2 d-none d-sm-block">
             <span className="fa fa-clock-o color-warning fw-800 icon-position-fix"></span>
             <p className="ml-2 mb-0 fs--1 d-inline color-white fw-700">
-              {info.address}
+              {info.open}
             </p>
           </div>
           <div className="col-auto">
@@ -77,7 +77,7 @@ const InfoNav: React.FC = () => {
               className="ml-2 mb-0 fs--1 d-inline color-white fw-700"
               href="tel:2123865575"
             >
-              {info.address}
+              {info.tell}
             </a>
           </div>
         </div>
@@ -99,24 +99,38 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
           {/* <a className="navbar-brand overflow-hidden pr-3" href="index.html">
             logo
           </a> */}
-          <Link className="text-center" to="/">
+          <Link className="text-center pr-5" to="/">
             <h1 className="navbar-brand mb-0">{title}</h1>
           </Link>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav fs-0 fw-700">
+          <div className="collapse navbar-collapse" id="navbar-nav-dropdown">
+            <ul className="navbar-nav fs--1 fw-700">
+              <li className="pr-3">
+                <Link to="/">Home</Link>
+              </li>
               <li className="dropdown">
-                <DropdownLink text="Home" />
+                <DropdownLink text="車のご相談・メンテナンス" />
                 <Links
                   list={[
-                    { link: 'aaaa', href: '#' },
-                    { link: 'bbb', href: '#' },
+                    { link: '車検', href: '#' },
+                    { link: '洗車', href: '#' },
+                    { link: 'オイル交換', href: '#' },
+                    { link: 'タイヤ交換', href: '#' },
+                    { link: '修理', href: '#' },
+                    { link: 'ロードサービス', href: '#' },
+                  ]}
+                />
+              </li>
+              <li className="dropdown">
+                <DropdownLink text="ご購入" />
+                <Links
+                  list={[
+                    { link: 'エンジンオイル', href: '#' },
+                    { link: '中古車情報', href: '#' },
                   ]}
                 />
               </li>
               <li>
-                <a className="d-block mr-md-9" href="contact.html">
-                  Contact
-                </a>
+                <Link to="/">採用情報</Link>
               </li>
             </ul>
             <ul className="navbar-nav ml-lg-auto">
