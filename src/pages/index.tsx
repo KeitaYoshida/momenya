@@ -25,15 +25,18 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
       <Meta site={meta} />
       <TopSlider />
       <Service />
-      {posts.map((post, i) => (
-        <Post
-          data={post as PostByPathQuery}
-          options={{
-            isIndex: true,
-          }}
-          key={i}
-        />
-      ))}
+      {posts.map((post, i) => {
+        console.log(i, post)
+        return (
+          <Post
+            data={post as PostByPathQuery}
+            options={{
+              isIndex: true,
+            }}
+            key={i}
+          />
+        )
+      })}
     </Layout>
   )
 }
