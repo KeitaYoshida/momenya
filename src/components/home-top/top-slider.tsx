@@ -4,7 +4,6 @@ import OpacityBox from 'src/components/motion-box/opacity-box'
 import './home-top-style.scss'
 
 const TopSlider: React.FC = () => {
-  const boxClass = ''
   return (
     <div className="flexslider flexslider-simple h-full loading">
       <ul>

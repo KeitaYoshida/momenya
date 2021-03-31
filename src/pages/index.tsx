@@ -26,7 +26,6 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
       <Service />
       <Insta />
       {posts.map((post, i) => {
-        console.log(i, post)
         return (
           <Post
             data={post as PostByPathQuery}

@@ -34,5 +34,4 @@ Unicode is supported 😄
 
 ```js
 // javascript
-console.log('Hello World!!')
 ```
