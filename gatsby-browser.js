@@ -4,3 +4,6 @@ import 'popper.js/dist/popper.min'
 import 'bootstrap/js/dist/util'
 import 'bootstrap/js/dist/carousel'
 import 'bootstrap/js/dist/dropdown'
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";

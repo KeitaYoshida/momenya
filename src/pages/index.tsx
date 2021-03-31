@@ -7,8 +7,8 @@ import Post from '../templates/post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 import Service from '../components/service/service-inpage'
-//@ts-ignore
 import TopSlider from 'src/components/home-top/top-slider'
+import Insta from 'src/components/instagram/instagram-row'
 
 interface Props {
   data: IndexQueryQuery
@@ -17,7 +17,6 @@ interface Props {
 
 const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
   const posts = data.remark.posts
-  console.log(posts)
   const meta = data.site?.meta
 
   return (
@@ -25,6 +24,7 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
       <Meta site={meta} />
       <TopSlider />
       <Service />
+      <Insta />
       {posts.map((post, i) => {
         console.log(i, post)
         return (
