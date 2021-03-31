@@ -36,7 +36,7 @@ const Insta = () => {
     ],
   }
   return (
-    <div className="py-8 hidden-width">
+    <div className="py-8 hidden-width background-11">
       <OpacityBox time={3}>
         <Slider {...settings}>
           {

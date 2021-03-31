@@ -7,6 +7,7 @@ import Post from '../templates/post/post'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 import Service from '../components/service/service-inpage'
+import ServiceList from '../components/service-list/service-list'
 import TopSlider from 'src/components/home-top/top-slider'
 import Insta from 'src/components/instagram/instagram-row'
 
@@ -25,6 +26,7 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
       <TopSlider />
       <Service />
       <Insta />
+      <ServiceList />
       {posts.map((post, i) => {
         return (
           <Post

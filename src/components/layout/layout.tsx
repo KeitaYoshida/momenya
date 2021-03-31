@@ -11,6 +11,8 @@ import 'prismjs/themes/prism.css'
 import 'scss/gatstrap.scss'
 import 'animate.css/animate.css'
 import 'font-awesome/css/font-awesome.css'
+import 'src/scss/styles.scss'
+import 'src/com-style.scss'
 
 interface Props {
   children?: React.ReactNode
@@ -23,7 +25,7 @@ const Layout: React.FC<Props> = ({ children, location }: Props) => {
   })
 
   return (
-    <div>
+    <div className="main-contents-box">
       <Navibar title={siteMetadata.title} location={location} />
       {children}
       <Footer title={siteMetadata.title} author={siteMetadata.author} />
