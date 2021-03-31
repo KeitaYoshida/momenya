@@ -11,7 +11,7 @@ import './row.scss'
 const Insta = () => {
   const instaPhotos = useInstagram()
   const settings = {
-    dots: false,
+    // dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -20,31 +20,24 @@ const Insta = () => {
     autoplaySpeed: 0,
     cssEase: 'linear',
     draggable: true,
-    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
     ],
   }
   return (
-    <div className="py-8">
-      <OpacityBox>
+    <div className="py-8 hidden-width">
+      <OpacityBox time={3}>
         <Slider {...settings}>
           {
             //@ts-ignore

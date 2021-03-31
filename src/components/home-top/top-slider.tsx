@@ -13,7 +13,7 @@ const TopSlider: React.FC = () => {
               <div className="background-holder back-image"></div>
               <div className="container">
                 <div className="row h-full py-8 align-items-center">
-                  <OpacityBox>
+                  <OpacityBox time={1}>
                     <div className="p-4 py-3 px-sm-5 py-sm-3 top-message">
                       <div className="overflow-hidden">
                         <h1 className="fs-4 fs-md-5 zopacity">
