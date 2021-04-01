@@ -380,9 +380,9 @@ type MarkdownRemarkFrontmatter = {
   readonly layout: Maybe<Scalars['String']>;
   readonly path: Maybe<Scalars['String']>;
   readonly category: Maybe<Scalars['String']>;
-  readonly description: Maybe<Scalars['String']>;
-  readonly image: Maybe<File>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly image: Maybe<File>;
+  readonly description: Maybe<Scalars['String']>;
 };
 
 
@@ -1152,9 +1152,9 @@ type MarkdownRemarkFrontmatterFilterInput = {
   readonly layout: Maybe<StringQueryOperatorInput>;
   readonly path: Maybe<StringQueryOperatorInput>;
   readonly category: Maybe<StringQueryOperatorInput>;
-  readonly description: Maybe<StringQueryOperatorInput>;
-  readonly image: Maybe<FileFilterInput>;
   readonly tags: Maybe<StringQueryOperatorInput>;
+  readonly image: Maybe<FileFilterInput>;
+  readonly description: Maybe<StringQueryOperatorInput>;
 };
 
 type FileFilterInput = {
@@ -1396,7 +1396,7 @@ type FileFieldsEnum =
   | 'childrenMarkdownRemark.frontmatter.layout'
   | 'childrenMarkdownRemark.frontmatter.path'
   | 'childrenMarkdownRemark.frontmatter.category'
-  | 'childrenMarkdownRemark.frontmatter.description'
+  | 'childrenMarkdownRemark.frontmatter.tags'
   | 'childrenMarkdownRemark.frontmatter.image.sourceInstanceName'
   | 'childrenMarkdownRemark.frontmatter.image.absolutePath'
   | 'childrenMarkdownRemark.frontmatter.image.relativePath'
@@ -1436,7 +1436,7 @@ type FileFieldsEnum =
   | 'childrenMarkdownRemark.frontmatter.image.childrenImageSharp'
   | 'childrenMarkdownRemark.frontmatter.image.id'
   | 'childrenMarkdownRemark.frontmatter.image.children'
-  | 'childrenMarkdownRemark.frontmatter.tags'
+  | 'childrenMarkdownRemark.frontmatter.description'
   | 'childrenMarkdownRemark.excerpt'
   | 'childrenMarkdownRemark.rawMarkdownBody'
   | 'childrenMarkdownRemark.fileAbsolutePath'
@@ -1495,7 +1495,7 @@ type FileFieldsEnum =
   | 'childMarkdownRemark.frontmatter.layout'
   | 'childMarkdownRemark.frontmatter.path'
   | 'childMarkdownRemark.frontmatter.category'
-  | 'childMarkdownRemark.frontmatter.description'
+  | 'childMarkdownRemark.frontmatter.tags'
   | 'childMarkdownRemark.frontmatter.image.sourceInstanceName'
   | 'childMarkdownRemark.frontmatter.image.absolutePath'
   | 'childMarkdownRemark.frontmatter.image.relativePath'
@@ -1535,7 +1535,7 @@ type FileFieldsEnum =
   | 'childMarkdownRemark.frontmatter.image.childrenImageSharp'
   | 'childMarkdownRemark.frontmatter.image.id'
   | 'childMarkdownRemark.frontmatter.image.children'
-  | 'childMarkdownRemark.frontmatter.tags'
+  | 'childMarkdownRemark.frontmatter.description'
   | 'childMarkdownRemark.excerpt'
   | 'childMarkdownRemark.rawMarkdownBody'
   | 'childMarkdownRemark.fileAbsolutePath'
@@ -2601,7 +2601,7 @@ type MarkdownRemarkFieldsEnum =
   | 'frontmatter.layout'
   | 'frontmatter.path'
   | 'frontmatter.category'
-  | 'frontmatter.description'
+  | 'frontmatter.tags'
   | 'frontmatter.image.sourceInstanceName'
   | 'frontmatter.image.absolutePath'
   | 'frontmatter.image.relativePath'
@@ -2681,7 +2681,7 @@ type MarkdownRemarkFieldsEnum =
   | 'frontmatter.image.internal.mediaType'
   | 'frontmatter.image.internal.owner'
   | 'frontmatter.image.internal.type'
-  | 'frontmatter.tags'
+  | 'frontmatter.description'
   | 'excerpt'
   | 'rawMarkdownBody'
   | 'fileAbsolutePath'
@@ -3144,8 +3144,8 @@ type InstaNodeFieldsEnum =
   | 'localFile.childrenMarkdownRemark.frontmatter.layout'
   | 'localFile.childrenMarkdownRemark.frontmatter.path'
   | 'localFile.childrenMarkdownRemark.frontmatter.category'
-  | 'localFile.childrenMarkdownRemark.frontmatter.description'
   | 'localFile.childrenMarkdownRemark.frontmatter.tags'
+  | 'localFile.childrenMarkdownRemark.frontmatter.description'
   | 'localFile.childrenMarkdownRemark.excerpt'
   | 'localFile.childrenMarkdownRemark.rawMarkdownBody'
   | 'localFile.childrenMarkdownRemark.fileAbsolutePath'
@@ -3180,8 +3180,8 @@ type InstaNodeFieldsEnum =
   | 'localFile.childMarkdownRemark.frontmatter.layout'
   | 'localFile.childMarkdownRemark.frontmatter.path'
   | 'localFile.childMarkdownRemark.frontmatter.category'
-  | 'localFile.childMarkdownRemark.frontmatter.description'
   | 'localFile.childMarkdownRemark.frontmatter.tags'
+  | 'localFile.childMarkdownRemark.frontmatter.description'
   | 'localFile.childMarkdownRemark.excerpt'
   | 'localFile.childMarkdownRemark.rawMarkdownBody'
   | 'localFile.childMarkdownRemark.fileAbsolutePath'
@@ -3729,6 +3729,11 @@ type PostByPathQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSi
     )> }
   )> };
 
+type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type PagesQueryQuery = { readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+
 type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3747,10 +3752,13 @@ type ProfilePageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 type ProfilePageQueryQuery = { readonly profile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }> };
 
-type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type PagesQueryQuery = { readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+type Unnamed_1_Query = { readonly allInstaNode: { readonly nodes: ReadonlyArray<(
+      Pick<InstaNode, 'id' | 'caption' | 'username'>
+      & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }> }
+    )> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -3773,13 +3781,5 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type Unnamed_1_Query = { readonly allInstaNode: { readonly nodes: ReadonlyArray<(
-      Pick<InstaNode, 'id' | 'caption' | 'username'>
-      & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }> }
-    )> } };
 
 }

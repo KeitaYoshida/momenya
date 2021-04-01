@@ -11,7 +11,7 @@ import 'prismjs/themes/prism.css'
 import 'scss/gatstrap.scss'
 import 'animate.css/animate.css'
 import 'font-awesome/css/font-awesome.css'
-import 'src/scss/styles.scss'
+// import 'src/scss/styles.scss'
 // import 'src/com-style.scss'
 
 interface Props {
