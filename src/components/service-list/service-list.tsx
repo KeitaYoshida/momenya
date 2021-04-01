@@ -1,4 +1,5 @@
 import React from 'react'
+import './service-list-style.scss'
 
 const ServiceList: React.FC = () => {
   return (
@@ -18,10 +19,10 @@ const ServiceList: React.FC = () => {
           >
             <div
               className="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0"
-              // style="background-image:url(assets/images/6.jpg);"
+              id="sensha"
             ></div>
           </div>
-          <div className="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
+          <div className="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-11 radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
             <div className="d-flex align-items-center h-100">
               <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                 <div className="overflow-hidden">
@@ -66,7 +67,7 @@ const ServiceList: React.FC = () => {
               // style="background-image:url(assets/images/7.jpg);"
             ></div>
           </div>
-          <div className="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
+          <div className="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-11 radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
             <div className="d-flex align-items-center h-100">
               <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                 <div className="overflow-hidden">
@@ -111,7 +112,7 @@ const ServiceList: React.FC = () => {
               // style="background-image:url(assets/images/8.jpg);"
             ></div>
           </div>
-          <div className="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary">
+          <div className="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-11 radius-bl-secondary radius-bl-lg-0 radius-br-secondary">
             <div className="d-flex align-items-center h-100">
               <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                 <div className="overflow-hidden">

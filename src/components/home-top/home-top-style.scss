@@ -1,4 +1,4 @@
-#cnt-1 {
+#home-top-cnt {
   display: flex;
   text-align: center;
   &:before{
@@ -10,7 +10,7 @@
     z-index:-1;
     width:100%;
     height:100vh;
-    background:url("src/assets/images/movable-type.jpg") center no-repeat;
+    background:url("src/assets/images/top-image.jpg") center no-repeat;
     background-size:cover;
   }
 

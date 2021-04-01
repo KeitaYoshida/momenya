@@ -7,7 +7,7 @@ const TopSlider: React.FC = () => {
   return (
     <section
       className="h-full align-items-center py-0  justify-content-center "
-      id="cnt-1"
+      id="home-top-cnt"
     >
       <OpacityBox time={1}>
         <div className="py-7 px-5 py-sm-5 px-sm-5 top-message">
