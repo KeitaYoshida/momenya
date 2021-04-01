@@ -2,6 +2,7 @@ import React from 'react'
 import './service-list-style.scss'
 
 import HrDiv from 'src/components/tools/hr-div'
+import OpacityBox from 'src/components/motion-box/opacity-box'
 
 const ServiceList: React.FC = () => {
   return (
