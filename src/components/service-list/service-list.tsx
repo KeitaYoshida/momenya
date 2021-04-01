@@ -1,16 +1,14 @@
 import React from 'react'
 import './service-list-style.scss'
 
+import HrDiv from 'src/components/tools/hr-div'
+
 const ServiceList: React.FC = () => {
   return (
     <section>
       <div className="container">
         <h3 className="text-center fs-2 fs-md-3">Our Services</h3>
-        <hr
-          className="short"
-          data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}'
-          data-zanim-trigger="scroll"
-        />
+        <HrDiv />
         <div className="row no-gutters pos-relative mt-6">
           <div className="elixir-caret d-none d-lg-block"></div>
           <div

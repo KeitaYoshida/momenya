@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import './style.scss'
+import './navibar.scss'
 interface Props {
   title: string
   location: Location
@@ -53,7 +53,7 @@ const info: ShopInfo = {
 
 const InfoNav: React.FC = () => {
   return (
-    <section
+    <nav
       className="background-primary py-3 d-none d-sm-block"
       id="top-info-home"
     >
@@ -82,7 +82,7 @@ const InfoNav: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </nav>
   )
 }
 

@@ -1,0 +1,8 @@
+@import "src/scss/colors.scss";
+
+.hr-div {
+  width: 2rem;
+  height: 2px;
+  background-color: $primay-color;
+  margin: 0 auto;
+}

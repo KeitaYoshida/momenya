@@ -2,6 +2,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
+import './service.scss'
+
+import HrDiv from 'src/components/tools/hr-div'
+
 import {
   faGasPump,
   faWrench,
@@ -39,7 +43,7 @@ const MotionBox: React.FC<Props> = ({ children }: Props) => {
 
 const ServiceInPage: React.FC = () => {
   return (
-    <section className="background-white  text-center">
+    <section className="background-white  text-center py-8">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-10 col-md-6">
@@ -50,11 +54,7 @@ const ServiceInPage: React.FC = () => {
               Get expert consultancy and support with Elixir, an advisory firm
               that stand by your side always.
             </p>
-            <hr
-              className="short"
-              data-zanim='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}'
-              data-zanim-trigger="scroll"
-            />
+            <HrDiv />
           </div>
         </div>
         <div className="row mt-4 mt-md-5">
