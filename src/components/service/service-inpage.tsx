@@ -10,7 +10,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import 'src/com-style.scss'
 // import './style.scss'
 
 interface Props {
@@ -22,8 +21,8 @@ const MotionBox: React.FC<Props> = ({ children }: Props) => {
     threshold: 0,
   })
   const variants = {
-    open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: '20%' },
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: '20%' },
   }
   return (
     <motion.div
@@ -33,7 +32,7 @@ const MotionBox: React.FC<Props> = ({ children }: Props) => {
       variants={variants}
       transition={{ duration: 1.5 }}
     >
-      {children}
+      <div>{children}</div>
     </motion.div>
   )
 }
