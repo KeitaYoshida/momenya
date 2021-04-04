@@ -104,9 +104,6 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
           </Link>
           <div className="collapse navbar-collapse" id="navbar-nav-dropdown">
             <ul className="navbar-nav fs--1 fw-700">
-              <li className="pr-3">
-                <Link to="/">Home</Link>
-              </li>
               <li className="dropdown">
                 <DropdownLink text="車のご相談・メンテナンス" />
                 <Links
@@ -129,18 +126,15 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
                   ]}
                 />
               </li>
-              <li>
-                <Link to="/">採用情報</Link>
-              </li>
             </ul>
             <ul className="navbar-nav ml-lg-auto">
               <li>
                 <a
-                  className="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700"
+                  className="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700 fs--1"
                   href="https://themewagon.com/themes/elixir/"
                   target="_blank"
                 >
-                  Purchase
+                  採用情報
                 </a>
               </li>
             </ul>

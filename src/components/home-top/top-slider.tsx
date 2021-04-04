@@ -12,11 +12,11 @@ const TopSlider: React.FC = () => {
       <OpacityBox time={1}>
         <div className="py-7 px-5 py-sm-5 px-sm-5 top-message">
           <div className="overflow-hidden">
-            <h1 className="fs-2 fs-md-3 zopacity">Helping Leaders</h1>
+            <h1 className="fs-2 fs-md-3 zopacity">トップメッセージ</h1>
           </div>
           <div className="overflow-hidden">
             <p className="color-primary mt-4 mb-5 lh-2 fs-1 fs-md-2 zopacity">
-              We look forward to help you in taking your company to new height.
+              紹介文言。前回お話したとおり、修理等のイメージを強めにデザインしてみました。
             </p>
           </div>
           <div className="overflow-hidden">

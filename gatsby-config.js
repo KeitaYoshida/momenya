@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
   siteMetadata: {
-    title: 'Gatstrap',
-    // title: '木綿屋モーターサービス',
+    // title: 'Gatstrap',
+    title: '木綿屋モーターサービス',
     description: 'Gatsby starter for bootstrap a blog',
     siteUrl: 'https://gatstrap.netlify.com',
     author: 'jaxx2104',

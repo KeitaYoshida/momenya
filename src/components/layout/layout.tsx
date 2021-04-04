@@ -6,6 +6,11 @@ import Navibar from '../navibar/navibar'
 import Footer from '../footer/footer'
 import { siteMetadata } from '../../../gatsby-config'
 
+import '@fontsource/noto-sans-jp'
+import '@fontsource/noto-serif-jp'
+import '@fontsource/open-sans'
+import '@fontsource/shippori-mincho-b1'
+
 import 'modern-normalize/modern-normalize.css'
 import 'prismjs/themes/prism.css'
 import 'scss/gatstrap.scss'

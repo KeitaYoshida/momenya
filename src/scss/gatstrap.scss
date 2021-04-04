@@ -67,6 +67,14 @@ $link-hover-decoration: none !default;
 // Fonts
 //
 @import './fonts.scss';
+html, body {
+  // sans
+  // font-family: "Noto Sans Jp",$font-family-base !important;
+  // serif def
+  font-family: "Noto Serif Jp",$font-family-base !important;
+  // serif 2
+  // font-family: "Shippori Mincho B1",$font-family-base !important;
+}
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 

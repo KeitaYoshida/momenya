@@ -29,17 +29,17 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
       <ServiceList />
       {
         //@ts-ignore
-        posts.map((post, i) => {
-          return (
-            <Post
-              data={post as PostByPathQuery}
-              options={{
-                isIndex: true,
-              }}
-              key={i}
-            />
-          )
-        })
+        // posts.map((post, i) => {
+        //   return (
+        //     <Post
+        //       data={post as PostByPathQuery}
+        //       options={{
+        //         isIndex: true,
+        //       }}
+        //       key={i}
+        //     />
+        //   )
+        // })
       }
     </Layout>
   )

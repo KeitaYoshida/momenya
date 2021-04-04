@@ -381,8 +381,8 @@ type MarkdownRemarkFrontmatter = {
   readonly path: Maybe<Scalars['String']>;
   readonly category: Maybe<Scalars['String']>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
-  readonly image: Maybe<File>;
   readonly description: Maybe<Scalars['String']>;
+  readonly image: Maybe<File>;
 };
 
 
@@ -1153,8 +1153,8 @@ type MarkdownRemarkFrontmatterFilterInput = {
   readonly path: Maybe<StringQueryOperatorInput>;
   readonly category: Maybe<StringQueryOperatorInput>;
   readonly tags: Maybe<StringQueryOperatorInput>;
-  readonly image: Maybe<FileFilterInput>;
   readonly description: Maybe<StringQueryOperatorInput>;
+  readonly image: Maybe<FileFilterInput>;
 };
 
 type FileFilterInput = {
@@ -1397,6 +1397,7 @@ type FileFieldsEnum =
   | 'childrenMarkdownRemark.frontmatter.path'
   | 'childrenMarkdownRemark.frontmatter.category'
   | 'childrenMarkdownRemark.frontmatter.tags'
+  | 'childrenMarkdownRemark.frontmatter.description'
   | 'childrenMarkdownRemark.frontmatter.image.sourceInstanceName'
   | 'childrenMarkdownRemark.frontmatter.image.absolutePath'
   | 'childrenMarkdownRemark.frontmatter.image.relativePath'
@@ -1436,7 +1437,6 @@ type FileFieldsEnum =
   | 'childrenMarkdownRemark.frontmatter.image.childrenImageSharp'
   | 'childrenMarkdownRemark.frontmatter.image.id'
   | 'childrenMarkdownRemark.frontmatter.image.children'
-  | 'childrenMarkdownRemark.frontmatter.description'
   | 'childrenMarkdownRemark.excerpt'
   | 'childrenMarkdownRemark.rawMarkdownBody'
   | 'childrenMarkdownRemark.fileAbsolutePath'
@@ -1496,6 +1496,7 @@ type FileFieldsEnum =
   | 'childMarkdownRemark.frontmatter.path'
   | 'childMarkdownRemark.frontmatter.category'
   | 'childMarkdownRemark.frontmatter.tags'
+  | 'childMarkdownRemark.frontmatter.description'
   | 'childMarkdownRemark.frontmatter.image.sourceInstanceName'
   | 'childMarkdownRemark.frontmatter.image.absolutePath'
   | 'childMarkdownRemark.frontmatter.image.relativePath'
@@ -1535,7 +1536,6 @@ type FileFieldsEnum =
   | 'childMarkdownRemark.frontmatter.image.childrenImageSharp'
   | 'childMarkdownRemark.frontmatter.image.id'
   | 'childMarkdownRemark.frontmatter.image.children'
-  | 'childMarkdownRemark.frontmatter.description'
   | 'childMarkdownRemark.excerpt'
   | 'childMarkdownRemark.rawMarkdownBody'
   | 'childMarkdownRemark.fileAbsolutePath'
@@ -2602,6 +2602,7 @@ type MarkdownRemarkFieldsEnum =
   | 'frontmatter.path'
   | 'frontmatter.category'
   | 'frontmatter.tags'
+  | 'frontmatter.description'
   | 'frontmatter.image.sourceInstanceName'
   | 'frontmatter.image.absolutePath'
   | 'frontmatter.image.relativePath'
@@ -2681,7 +2682,6 @@ type MarkdownRemarkFieldsEnum =
   | 'frontmatter.image.internal.mediaType'
   | 'frontmatter.image.internal.owner'
   | 'frontmatter.image.internal.type'
-  | 'frontmatter.description'
   | 'excerpt'
   | 'rawMarkdownBody'
   | 'fileAbsolutePath'

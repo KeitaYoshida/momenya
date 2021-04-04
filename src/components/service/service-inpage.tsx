@@ -48,11 +48,10 @@ const ServiceInPage: React.FC = () => {
         <div className="row justify-content-center">
           <div className="col-10 col-md-6">
             <h3 className="color-primary fs-2 fs-lg-3">
-              Welcome to the Elixir
+              [一押しポイント]
             </h3>
             <p className="px-lg-4 mt-3">
-              Get expert consultancy and support with Elixir, an advisory firm
-              that stand by your side always.
+              強み、アピール 概要
             </p>
             <HrDiv />
           </div>
