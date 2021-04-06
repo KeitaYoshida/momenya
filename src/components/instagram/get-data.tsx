@@ -10,7 +10,7 @@ const useInstagram = () => {
           username
           localFile {
             childImageSharp {
-              fluid(maxWidth: 240, maxHeight: 240) {
+              fluid(maxWidth: 280, maxHeight: 280) {
                 ...GatsbyImageSharpFluid
               }
             }
