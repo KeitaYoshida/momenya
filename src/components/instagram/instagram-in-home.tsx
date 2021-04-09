@@ -13,7 +13,7 @@ const Insta = () => {
   const settings = {
     // dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
     speed: 7000,
@@ -22,7 +22,19 @@ const Insta = () => {
     draggable: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 6,
+        },
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 980,
         settings: {
           slidesToShow: 4.5,
         },

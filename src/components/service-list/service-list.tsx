@@ -88,12 +88,9 @@ const Cnt: React.FC = () => {
                   : 'col-lg-6 py-3 py-lg-0 mb-0 image-box order-lg-2'
               }
             >
-              <div
-                className="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0"
-                id={row.image}
-              ></div>
+              <div className="background-holder " id={row.image}></div>
             </div>
-            <div className="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-11 radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
+            <div className="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white">
               <div className="d-flex align-items-center h-100">
                 <div>
                   <div className="overflow-hidden">
