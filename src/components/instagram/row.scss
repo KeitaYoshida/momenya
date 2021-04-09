@@ -3,5 +3,11 @@
   height: auto;
 }
 .hidden-width {
-  // overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+.top-in {
+  position: absolute;
+  bottom: -1rem;
+  left:0;
 }

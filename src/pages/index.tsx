@@ -9,7 +9,7 @@ import Layout from '../components/layout/layout'
 import Service from '../components/service/service-inpage'
 import ServiceList from '../components/service-list/service-list'
 import TopSlider from 'src/components/home-top/top-slider'
-import Insta from 'src/components/instagram/instagram-row'
+// import Insta from 'src/components/instagram/instagram-row'
 
 interface Props {
   data: IndexQueryQuery
@@ -25,7 +25,7 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
       <Meta site={meta} />
       <TopSlider />
       <Service />
-      <Insta />
+      {/* <Insta /> */}
       <ServiceList />
       {
         //@ts-ignore

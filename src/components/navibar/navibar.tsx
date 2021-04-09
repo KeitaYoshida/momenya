@@ -102,7 +102,11 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
           <Link className="text-center pr-5" to="/">
             <h1 className="navbar-brand mb-0">{title}</h1>
           </Link>
-          <div className="collapse navbar-collapse" id="navbar-nav-dropdown">
+          <div
+            // className="collapse navbar-collapse d-none d-md-block"
+            className="d-none"
+            id="navbar-nav-dropdown"
+          >
             <ul className="navbar-nav fs--1 fw-700">
               <li className="dropdown">
                 <DropdownLink text="車のご相談・メンテナンス" />

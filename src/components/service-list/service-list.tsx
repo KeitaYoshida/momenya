@@ -129,8 +129,8 @@ const Cnt: React.FC = () => {
 
 const ServiceList: React.FC = () => {
   return (
-    <section>
-      <div className="container py-8">
+    <section className="background-11">
+      <div className="container py-8 ">
         <h3 className="text-center fs-2 fs-md-3">サービス</h3>
         <HrDiv />
         <Cnt />
