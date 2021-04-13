@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
-const PostTemplate = path.resolve('./src/templates/template.tsx')
+const PostTemplate = path.resolve('src/templates/template.tsx')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -41,6 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
         posts.forEach(({ node }) => {
           if (!node.remark) return
           const { path } = node.remark.frontmatter
+          console.log(path)
           createPage({
             path,
             component: PostTemplate,

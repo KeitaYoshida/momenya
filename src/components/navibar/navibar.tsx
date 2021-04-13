@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Detail from './detail/detail'
 
 import './navibar.scss'
 interface Props {
@@ -53,10 +54,7 @@ const info: ShopInfo = {
 
 const InfoNav: React.FC = () => {
   return (
-    <nav
-      className="background-primary py-3 d-none d-sm-block"
-      id="top-info-home"
-    >
+    <nav className="background-primary py-3 d-block" id="top-info-home">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-auto d-none d-lg-block">
@@ -65,7 +63,7 @@ const InfoNav: React.FC = () => {
               {info.address}
             </p>
           </div>
-          <div className="col-auto ml-md-auto order-md-2 d-none d-sm-block">
+          <div className="col-auto ml-md-auto order-md-2">
             <span className="fa fa-clock-o color-warning fw-800 icon-position-fix"></span>
             <p className="ml-2 mb-0 fs--1 d-inline color-white fw-700">
               {info.open}
@@ -144,8 +142,8 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
             </ul>
           </div>
         </div>
+        <Detail />
       </nav>
-      {/* </div> */}
     </>
   )
 }

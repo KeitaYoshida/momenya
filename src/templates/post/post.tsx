@@ -35,6 +35,7 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
   const { isIndex, adsense } = options
   const html = data.post?.html || ''
   const isMore = isIndex && !!html.match('<!--more-->')
+  console.log(image)
 
   return (
     <div className="article" key={path}>
@@ -51,12 +52,12 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
         </div>
         <div className="content">
           <p>{frontmatter?.description}</p>
-          {/* {image?.childImageSharp?.fluid && (
+          {image?.childImageSharp?.fluid && (
             <Img
               fluid={image.childImageSharp.fluid as FluidObject}
               style={{ display: 'block', margin: '0 auto' }}
             />
-          )} */}
+          )}
         </div>
         <div
           className="content"

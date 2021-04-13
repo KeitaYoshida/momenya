@@ -1,68 +1,62 @@
 import React from 'react'
 import './service-list-style.scss'
 
+import { Link } from 'gatsby'
+
 import HrDiv from 'src/components/tools/hr-div'
 import OpacityBox from 'src/components/motion-box/opacity-box'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 
-interface Contents {
-  title: string
-  value: string
-  image: string
-  link: string
-}
-;[]
-
 const contents = [
   {
     title: '洗車',
     value: 'test',
     image: 'sensha',
-    link: 'test',
+    link: 'sensha',
   },
   {
     title: '車検',
     value: 'test',
     image: 'shaken',
-    link: 'test',
+    link: 'shaken',
   },
   {
     title: '給油',
     value: 'test',
     image: 'kyuyu',
-    link: 'test',
+    link: 'kyuyu',
   },
   {
     title: 'タイヤ交換',
     value: 'test',
     image: 'taiyakoukan',
-    link: 'test',
+    link: 'taiyakoukan',
   },
   {
     title: '修理・板金・塗装',
     value: 'test',
     image: 'bankin',
-    link: 'test',
+    link: 'bankin',
   },
   {
     title: '新車・中古車販売',
     value: 'test',
     image: 'hanbai',
-    link: 'test',
+    link: 'hanbai',
   },
   {
     title: 'CAR保険',
     value: 'test',
     image: 'hoken',
-    link: 'test',
+    link: 'hoken',
   },
   {
     title: 'ロードサービス',
     value: 'test',
     image: 'road',
-    link: 'test',
+    link: 'road',
   },
 ]
 
@@ -103,15 +97,14 @@ const Cnt: React.FC = () => {
                   </div>
                   <div className="overflow-hidden">
                     <div data-zanim='{"delay":0.2}'>
-                      <a className="d-flex align-items-center" href="#">
-                        Learn More{' '}
+                      <Link className="d-flex align-items-center" to={row.link}>
                         <div className="overflow-hidden ml-2">
                           <FontAwesomeIcon
                             icon={faAngleDoubleRight}
                             className="fs-0 color-blueish mx-auto"
                           />
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

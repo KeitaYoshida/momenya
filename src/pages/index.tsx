@@ -17,7 +17,7 @@ interface Props {
 }
 
 const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
-  const posts = data.remark.posts
+  // const posts = data.remark.posts
   const meta = data.site?.meta
 
   return (
@@ -57,31 +57,6 @@ export const pageQuery = graphql`
         author
         twitter
         adsense
-      }
-    }
-    remark: allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      posts: edges {
-        post: node {
-          html
-          frontmatter {
-            layout
-            title
-            path
-            category
-            tags
-            description
-            date(formatString: "YYYY/MM/DD")
-            image {
-              childImageSharp {
-                fluid(maxWidth: 500) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
       }
     }
   }

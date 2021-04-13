@@ -15,6 +15,7 @@ const TopSlider: React.FC = () => {
         <div className="py-5 px-3 py-sm-5 px-sm-5 my-9 top-message">
           <div className="overflow-hidden">
             <h1 className="fs-1 fs-md-2">Top Message</h1>
+            {/* <h1 className="fs-1 fs-md-2">木綿屋モーターサービス</h1> */}
           </div>
           <div className="overflow-hidden">
             <p className="color-primary mt-2 mb-2 lh-2 fs-0 fs-md-1 ">
@@ -27,15 +28,11 @@ const TopSlider: React.FC = () => {
                 Read more
                 <span className="fa fa-chevron-right ml-2"></span>
               </a>
-              <a className="btn btn-warning mt-3" href="contact.html">
-                Contact us
-                <span className="fa fa-chevron-right ml-2"></span>
-              </a>
             </div>
           </div>
         </div>
       </OpacityBox>
-      <Insta />
+      {/* <Insta /> */}
     </section>
   )
 }
