@@ -2,7 +2,7 @@ import React from 'react'
 import OpacityBox from 'src/components/motion-box/opacity-box'
 
 import './home-top-style.scss'
-import Insta from 'src/components/instagram/instagram-in-home'
+// import Insta from 'src/components/instagram/instagram-in-home'
 
 const TopSlider: React.FC = () => {
   return (

@@ -47,12 +47,8 @@ const ServiceInPage: React.FC = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-10 col-md-6">
-            <h3 className="color-primary fs-2 fs-lg-3">
-              [一押しポイント]
-            </h3>
-            <p className="px-lg-4 mt-3">
-              強み、アピール 概要
-            </p>
+            <h3 className="color-primary fs-2 fs-lg-3">[point]</h3>
+            <p className="px-lg-4 mt-3">強み、アピール 概要</p>
             <HrDiv />
           </div>
         </div>

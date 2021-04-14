@@ -2,8 +2,8 @@
 title: 'The Birth of Movable Type'
 date: '2016-03-01T22:12:03.284Z'
 layout: post
-path: '/kyukyu/'
-image: ./kyukyu.jpg
+path: '/kyuyu/'
+image: ./kyuyu.jpg
 description: 'Johannes Gensfleisch zur Laden zum Gutenberg (c. 1398 – 1468) was a German blacksmith, goldsmith, printer, and publisher who introduced printing to Europe.'
 category: Typography
 tags:

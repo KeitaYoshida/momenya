@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, actions }) => {
         posts.forEach(({ node }) => {
           if (!node.remark) return
           const { path } = node.remark.frontmatter
-          console.log(path)
+          // console.log(path)
           createPage({
             path,
             component: PostTemplate,

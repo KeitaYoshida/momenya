@@ -4,15 +4,17 @@ ul {
 li {
   list-style-type: none;
   text-align: center;
+  line-height: 2.3rem;
 }
 .detail-box {
   background-color: rgba(250, 250, 250, 0.8);
-  width: 40%;
-  min-width: 20rem;
+  max-width: 28rem;
+  width: 20rem;
   height: 100vh;
   padding: 60px 1rem 1rem 1rem;
   text-align: center;
   overflow-y: auto;
+  border-left: 1px solid #b3424a;
   // z-index: 1000;
 }
 .fixed-box {

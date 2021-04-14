@@ -1,6 +1,11 @@
 import * as React from 'react'
+import { Link } from 'gatsby'
+
 import { motion } from 'framer-motion'
 import { MenuItem } from './MenuItem'
+
+import Service from 'src/models/service/service'
+import HrDiv from 'src/components/tools/hr-div'
 
 import './detail.scss'
 
@@ -19,35 +24,18 @@ const variants = {
 
 export const Navigation = () => (
   <>
-    <p>A</p>
-    <motion.ul variants={variants}>
-      {itemIds.map((i) => (
-        <MenuItem i={i} key={i} />
+    <p>
+      <Link to="/">Momenya</Link>
+    </p>
+    <HrDiv />
+    <motion.ul variants={variants} className="mt-3">
+      {Service.map((service, i) => (
+        <MenuItem title={service.title} link={service.link} index={i} key={i} />
       ))}
     </motion.ul>
+    <HrDiv />
+    <p className="mt-3">
+      <Link to="/">採用情報</Link>
+    </p>
   </>
 )
-
-const itemIds = [
-  0,
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  10,
-  11,
-  12,
-  13,
-  14,
-  15,
-  16,
-  17,
-  18,
-  19,
-  20,
-]

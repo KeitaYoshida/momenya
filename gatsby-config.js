@@ -92,11 +92,11 @@ module.exports = {
     'gatsby-plugin-typegen',
     'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `4827544420`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `4827544420`,
+    //   },
+    // },
   ],
 }

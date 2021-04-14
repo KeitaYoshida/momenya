@@ -34,7 +34,6 @@ const Detail: React.FC = () => {
   const [isOpen, toggleOpen] = useCycle(false, true)
   const containerRef = useRef(null)
   const { height, width } = useDimensions(containerRef)
-  console.log(height, width)
 
   return (
     <motion.div
