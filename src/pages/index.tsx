@@ -2,14 +2,13 @@ import { graphql } from 'gatsby'
 import React from 'react'
 
 //@ts-ignore
-import { IndexQueryQuery, PostByPathQuery } from '../../types/graphql-types'
-import Post from '../templates/post/post'
+import { IndexQueryQuery } from '../../types/graphql-types'
 import Meta from '../components/meta/meta'
 import Layout from '../components/layout/layout'
 import Service from '../components/service/service-inpage'
 import ServiceList from '../components/service-list/service-list'
 import TopSlider from 'src/components/home-top/top-slider'
-// import Insta from 'src/components/instagram/instagram-new'
+import Insta from 'src/components/instagram/instagram-new'
 
 interface Props {
   data: IndexQueryQuery
@@ -24,24 +23,9 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
     <Layout location={location}>
       <Meta site={meta} />
       <TopSlider />
-      {/* <Insta /> */}
+      <Insta />
       <Service />
-      {/* <Insta /> */}
       <ServiceList />
-      {
-        //@ts-ignore
-        // posts.map((post, i) => {
-        //   return (
-        //     <Post
-        //       data={post as PostByPathQuery}
-        //       options={{
-        //         isIndex: true,
-        //       }}
-        //       key={i}
-        //     />
-        //   )
-        // })
-      }
     </Layout>
   )
 }

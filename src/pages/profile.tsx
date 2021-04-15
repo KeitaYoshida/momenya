@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby'
-import Img, { FixedObject } from 'gatsby-image'
+// import Img, { FixedObject } from 'gatsby-image'
 import React from 'react'
 
 import { ProfilePageQueryQuery } from '../../types/graphql-types'
@@ -21,7 +21,7 @@ const Profile: React.FC<Props> = ({ location, data }: Props) => {
       <div>
         <section className="text-center">
           <div className="container">
-            <Img fixed={profile as FixedObject} className="rounded-circle" />
+            {/* <Img fixed={profile as FixedObject} className="rounded-circle" /> */}
             <h1>jaxx2104</h1>
             <p className="lead text-muted">Front-end engineer.</p>
             <div>
