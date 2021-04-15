@@ -3218,6 +3218,11 @@ type SitePluginSortInput = {
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
 
+type ProfilePageQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type ProfilePageQueryQuery = { readonly profile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }> };
+
 type PostByPathQueryVariables = Exact<{
   path: Scalars['String'];
 }>;
@@ -3261,10 +3266,5 @@ type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type IndexQueryQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }> };
-
-type ProfilePageQueryQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type ProfilePageQueryQuery = { readonly profile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }> };
 
 }
