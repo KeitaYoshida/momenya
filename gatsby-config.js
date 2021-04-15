@@ -88,6 +88,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-image',
     'gatsby-plugin-twitter',
     'gatsby-plugin-typegen',
     'gatsby-plugin-typescript',

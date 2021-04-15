@@ -1,5 +1,5 @@
 import { Link } from 'gatsby'
-import Img, { FluidObject } from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 
 import Adsense from '../../components/adsense/adsense'
@@ -35,7 +35,7 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
   const { isIndex, adsense } = options
   const html = data.post?.html || ''
   const isMore = isIndex && !!html.match('<!--more-->')
-  console.log(image)
+  // console.log(image)
 
   return (
     <div className="article" key={path}>
@@ -52,10 +52,11 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
         </div>
         <div className="content">
           <p>{frontmatter?.description}</p>
-          {image?.childImageSharp?.fluid && (
-            <Img
-              fluid={image.childImageSharp.fluid as FluidObject}
+          {image?.childImageSharp?.gatsbyImageData && (
+            <GatsbyImage
+              image={image.childImageSharp.gatsbyImageData}
               style={{ display: 'block', margin: '0 auto' }}
+              alt="aaa"
             />
           )}
         </div>

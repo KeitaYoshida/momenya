@@ -3223,6 +3223,11 @@ type ProfilePageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 type ProfilePageQueryQuery = { readonly profile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fixed: Maybe<GatsbyImageSharpFixed_withWebpFragment> }> }> };
 
+type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type IndexQueryQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }> };
+
 type PostByPathQueryVariables = Exact<{
   path: Scalars['String'];
 }>;
@@ -3232,7 +3237,7 @@ type PostByPathQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSi
     Pick<MarkdownRemark, 'id' | 'html'>
     & { readonly frontmatter: Maybe<(
       Pick<MarkdownRemarkFrontmatter, 'layout' | 'title' | 'path' | 'category' | 'tags' | 'description' | 'date'>
-      & { readonly image: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }> }
+      & { readonly image: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
     )> }
   )> };
 
@@ -3261,10 +3266,5 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type IndexQueryQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }> };
 
 }
