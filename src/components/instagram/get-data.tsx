@@ -10,7 +10,7 @@ const useInstagram = () => {
           username
           localFile {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(width: 500)
             }
           }
         }

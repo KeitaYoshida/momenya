@@ -14,36 +14,36 @@ const Insta = () => {
   const settings = {
     // dots: true,
     infinite: true,
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     speed: 7000,
-    autoplaySpeed: 0,
+    autoplaySpeed: 1,
     cssEase: 'linear',
     draggable: true,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 6,
+          slidesToShow: 4.5,
         },
       },
       {
         breakpoint: 1100,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 980,
         settings: {
-          slidesToShow: 4.5,
+          slidesToShow: 3.5,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2.5,
         },
       },
     ],

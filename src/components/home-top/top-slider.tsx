@@ -12,7 +12,7 @@ const TopSlider: React.FC = () => {
       id="home-top-cnt"
     >
       <OpacityBox time={1}>
-        <div className="py-5 px-3 py-sm-5 px-sm-5 my-9 top-message">
+        <div className="py-5 px-3 py-sm-5 px-sm-5 my-8 top-message">
           <div className="overflow-hidden">
             <h1 className="fs-1 fs-md-2">Top Message</h1>
             {/* <h1 className="fs-1 fs-md-2">木綿屋モーターサービス</h1> */}
