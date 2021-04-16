@@ -12,6 +12,29 @@ export default class Instagram extends React.Component {
   THUMBNAIL_WIDTH = 640
   PHOTO_COUNT = 30
 
+  f =
+    'EAAN01aeturMBAAOzZAjSAgJHYZB1wsKWkfAY9ZAkmfACoDtkRl3y5rUru0vxDDcbGp2h9aTyEK0ExoU3n4Vqg8gJf2ZAZCo7vwKPFZCfI7JLpR4w2t07PTqyaZBg8FvcgLIT7IULp1aIdZCGLbBFm1eiq8j5QcCPJNUdKAymrR7yuicRwDbINcS3Hnlcq4zJQNz8yzXqxrXOlu0s4Ore1W7vKTZBJ5nDWzlYvjqktz46TeQZDZD'
+  fn =
+    'EAAN01aeturMBADZBZC2pb2vGxTVSOHF3ZBtaDvYvVV4DKnkLG3vcpZCmJqR1ZAMw6owvep5tZBMTLsb9ZCwn2kmQReZC4WxU5nx1i8KF9kEmzAoVfXtIIWXUZAhjQV1DX4MxniYzZBD20P8ZAiAXmqzxZBX1sxXqmGCJ2tHLEAmBJDqPYG3oHwZBb6oapmaRsCVGkGKcnajhZCoZAxUbSjZCawEsPjO5c60ldGnnvXAKT1rtB1fD2AZDZD'
+  id = '972885920168627'
+  app = 'd0dd6f7d92cd6292c87b084518526239'
+  url =
+    'https://graph.facebook.com/v10.0/oauth/access_token?grant_type=fb_exchange_token&client_id=972885920168627&client_secret=d0dd6f7d92cd6292c87b084518526239&fb_exchange_token=EAAN01aeturMBADZBZC2pb2vGxTVSOHF3ZBtaDvYvVV4DKnkLG3vcpZCmJqR1ZAMw6owvep5tZBMTLsb9ZCwn2kmQReZC4WxU5nx1i8KF9kEmzAoVfXtIIWXUZAhjQV1DX4MxniYzZBD20P8ZAiAXmqzxZBX1sxXqmGCJ2tHLEAmBJDqPYG3oHwZBb6oapmaRsCVGkGKcnajhZCoZAxUbSjZCawEsPjO5c60ldGnnvXAKT1rtB1fD2AZDZD'
+  to2 = {
+    access_token:
+      'EAAN01aeturMBADwcZAOxxL4FFWHdKXwAyTi74pP8QkVHyBlPzamow6Wo3XPFOZC55ttPnoPsjPuCVZAn2jPUs2ZA1qf9xrf0bck2W1ZCFbfkvqZBRIrjkzPoeJCcstkIY0t5VUetYhGqMrCH61fwVLwZCjwUPYl28ekUHG6mSDrjAZDZD',
+    token_type: 'bearer',
+    expires_in: 5105578,
+  }
+  urlTo3 =
+    'https://graph.facebook.com/v10.0/me?access_token=EAAN01aeturMBADwcZAOxxL4FFWHdKXwAyTi74pP8QkVHyBlPzamow6Wo3XPFOZC55ttPnoPsjPuCVZAn2jPUs2ZA1qf9xrf0bck2W1ZCFbfkvqZBRIrjkzPoeJCcstkIY0t5VUetYhGqMrCH61fwVLwZCjwUPYl28ekUHG6mSDrjAZDZD'
+  to3Id = '1269671453434174'
+  url4 = `https://graph.facebook.com/v10.0/1269671453434174/accounts?access_token=EAAN01aeturMBADwcZAOxxL4FFWHdKXwAyTi74pP8QkVHyBlPzamow6Wo3XPFOZC55ttPnoPsjPuCVZAn2jPUs2ZA1qf9xrf0bck2W1ZCFbfkvqZBRIrjkzPoeJCcstkIY0t5VUetYhGqMrCH61fwVLwZCjwUPYl28ekUHG6mSDrjAZDZD`
+  url4Test = `https://graph.facebook.com/v7.0/972885920168627/accounts?access_token=EAAN01aeturMBADYGGXuxyZBdKlxFQOgZBXwQZAQRots6HZBdFfHX435lD5ByPOcvy4Wd7IZCNWjPqWurZCsxMNkwZCQvWTttAkhy909TGWAsG9cHzZBo0etkMH75nZB2sRpYIRGg7FdZASeBfHZBVruSoEAFD0qgRfFocBEgbX3TxuZCRAZDZD`
+
+  museigen =
+    'EAAN01aeturMBAEfnZBWqS2OASB0G7BYkooemlKrC72dSZCl4y68ZCDiU696NslIb38myfF8aZAbUmYNrnBxsgWx7RDUDMrp4sgINqkjJIbhJhCzVYZAuE7aIZB07bnxmUxrAS2Y7Hjf8JAyoZB1IrSxMBgiU7ZBMRCY1XLLipXnhpwZDZD'
+
   async componentDidMount() {
     try {
       // Hack from https://stackoverflow.com/a/47243409/2217533
