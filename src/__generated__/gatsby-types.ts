@@ -3827,6 +3827,8 @@ type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 type IndexQueryQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }> };
 
+type GatsbyImageSharpFixed_withWebpFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
+
 type ProfilePageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3843,8 +3845,6 @@ type Unnamed_1_Query = { readonly allInstaNode: { readonly nodes: ReadonlyArray<
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
 type GatsbyImageSharpFixed_tracedSVGFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'>;
-
-type GatsbyImageSharpFixed_withWebpFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
 
 type GatsbyImageSharpFixed_withWebp_tracedSVGFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp'>;
 
