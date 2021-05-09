@@ -6,6 +6,8 @@ import Adsense from '../../components/adsense/adsense'
 import Button from '../../components/button/button'
 import Badge from '../../components/badge/badge'
 
+import ServiceList from 'src/components/service-list/service-list'
+
 import './style.scss'
 
 const getDescription = (content: string): string => {
@@ -30,20 +32,20 @@ interface Props {
 
 const Post: React.FC<Props> = ({ data, options }: Props) => {
   const frontmatter = data.post?.frontmatter
+  const category = frontmatter?.category
+  const isService = category === 'サービス'
   const path = frontmatter?.path || ''
   const image = frontmatter?.image || null
   const { isIndex, adsense } = options
   const html = data.post?.html || ''
   const isMore = isIndex && !!html.match('<!--more-->')
-  // console.log(image)
 
   return (
-    <div className="article" key={path}>
+    <div className="article pt-2" key={path}>
       <div className="container">
         <div className="info">
           <Link style={{ boxShadow: 'none' }} to={path}>
-            <h1>{frontmatter?.title}</h1>
-            <time dateTime={frontmatter?.date}>{frontmatter?.date}</time>
+            <h1 className="fs-0 fs-md-2">{frontmatter?.title}</h1>
           </Link>
           <Badge label={frontmatter?.category || ''} primary={true} />
           {(frontmatter?.tags || []).map((tag, index) => (
@@ -51,7 +53,6 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
           ))}
         </div>
         <div className="content">
-          <p>{frontmatter?.description}</p>
           {image?.childImageSharp?.gatsbyImageData && (
             <GatsbyImage
               image={image.childImageSharp.gatsbyImageData}
@@ -59,15 +60,17 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
               alt="aaa"
             />
           )}
+          <p>{frontmatter?.description}</p>
         </div>
         <div
-          className="content"
+          className="content text-center"
           dangerouslySetInnerHTML={{
             __html: isMore ? getDescription(html) : html,
           }}
         />
         {isMore && <Button path={path} label="MORE" primary={true} />}
         {!isIndex && <Adsense clientId={adsense} slotId="" format="auto" />}
+        {isService && <ServiceList />}
       </div>
     </div>
   )

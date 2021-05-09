@@ -1,5 +1,6 @@
 import React from 'react'
 import './service-list-style.scss'
+import { motion } from 'framer-motion'
 
 import { Link } from 'gatsby'
 
@@ -39,7 +40,16 @@ const Cnt: React.FC = () => {
               <div className="d-flex align-items-center h-100">
                 <div>
                   <div className="overflow-hidden">
-                    <h5>{row.title}</h5>
+                    <h5>
+                      <motion.a
+                        // className="text-center fs--1 fs-md--1 d-inline-block mx-1 mx-md-2 px-3 py-1 my-1 title-list"
+                        href={row.link}
+                        whileHover={{ scale: 1.2 }}
+                        key={index}
+                      >
+                        {row.title}
+                      </motion.a>
+                    </h5>
                   </div>
                   <div className="overflow-hidden">
                     <p className="mt-3" data-zanim='{"delay":0.1}'>
@@ -47,15 +57,14 @@ const Cnt: React.FC = () => {
                     </p>
                   </div>
                   <div className="overflow-hidden">
-                    <div data-zanim='{"delay":0.2}'>
-                      <Link className="d-flex align-items-center" to={row.link}>
-                        <div className="overflow-hidden ml-2">
-                          <FontAwesomeIcon
-                            icon={faAngleDoubleRight}
-                            className="fs-0 color-blueish mx-auto"
-                          />
-                        </div>
-                      </Link>
+                    <div className="overflow-hidden ml-2">
+                      <a href={row.link}>
+                        詳しく見る
+                        <FontAwesomeIcon
+                          icon={faAngleDoubleRight}
+                          className="fs-0 color-blueish mx-auto"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -69,11 +78,24 @@ const Cnt: React.FC = () => {
 }
 
 const ServiceList: React.FC = () => {
+  const service = Service
   return (
     <section className="background-11">
       <div className="container py-8 ">
         <h3 className="text-center fs-2 fs-md-3">サービス</h3>
         <HrDiv />
+        <div className="mt-3 mx-md-5 text-center">
+          {service.map((row, index) => (
+            <motion.a
+              className="text-center fs--1 fs-md--1 d-inline-block mx-1 mx-md-2 px-3 py-1 my-1 title-list"
+              href={row.link}
+              whileHover={{ scale: 1.2 }}
+              key={index}
+            >
+              {row.title}
+            </motion.a>
+          ))}
+        </div>
         <Cnt />
       </div>
     </section>

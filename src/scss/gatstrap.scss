@@ -123,6 +123,10 @@ h1, h2, h3, h4, h5, h6, a {
   color: $primay-color;
   font-weight: 600;
 }
+a:hover{
+  color: $strong-color;
+  // font-weight: 600;
+}
 .btn-outline-primary {
     color: $primay-color;
     background-image: none;
@@ -138,4 +142,15 @@ h1, h2, h3, h4, h5, h6, a {
 }
 svg {
   color: $primay-color;
+}
+hr.in-post-line {
+  width: 100%;
+  max-width: 100%;
+  height: 2px;
+}
+.content {
+  h2, h3, h4 {
+    margin-top: 2rem;
+    margin-bottom:0.8rem;
+  }
 }

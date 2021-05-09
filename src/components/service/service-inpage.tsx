@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { Link } from 'gatsby'
 
 import './service.scss'
 
@@ -31,7 +32,7 @@ const MotionBox: React.FC<Props> = ({ children }: Props) => {
   return (
     <motion.div
       ref={ref}
-      className="col-sm-6 col-lg-3 mt-4"
+      className="col-12 col-sm-4 mt-4"
       animate={inView ? 'opne' : 'closed'}
       variants={variants}
       transition={{ duration: 1.5 }}
@@ -47,8 +48,12 @@ const ServiceInPage: React.FC = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-10 col-md-6">
-            <h3 className="color-primary fs-2 fs-lg-3">[point]</h3>
-            <p className="px-lg-4 mt-3">強み、アピール 概要</p>
+            <h3 className="color-primary fs-2 fs-lg-3">
+              フルマネージド カー サービス
+            </h3>
+            <p className="px-lg-4 mt-3">
+              ガソリンスタンドと修理工場、両施設を併設する私達だからこそできることがあります
+            </p>
             <HrDiv />
           </div>
         </div>
@@ -58,18 +63,19 @@ const ServiceInPage: React.FC = () => {
               className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
               style={{ height: 100, width: 100 }}
             >
-              {/* <span className="icon-Bar-Chart5 fs-3 color-blueish mx-auto fw-600"></span> */}
               <FontAwesomeIcon
                 icon={faGasPump}
-                className="fs-3 color-blueish mx-auto fw-600"
+                className="fs-1 color-blueish mx-auto fw-600"
               />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              Business Consulting
+              <Link to="store-gasolin">ガソリンスタンド 下條SS</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              Solution for every business related problems, readily <br />
-              and skillfully.
+              ガソリンスタンド。給油（ガソリン・灯油）・洗車・タイヤ交換・オイル交換・カー保険様々なサービスを提供しております。
+            </p>
+            <p className="pt-3">
+              <Link to="store-gasolin">詳細はこちら</Link>
             </p>
           </MotionBox>
           <MotionBox>
@@ -77,18 +83,19 @@ const ServiceInPage: React.FC = () => {
               className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
               style={{ height: 100, width: 100 }}
             >
-              {/* <span className="icon-Bar-Chart5 fs-3 color-blueish mx-auto fw-600"></span> */}
               <FontAwesomeIcon
                 icon={faWrench}
-                className="fs-3 color-blueish mx-auto fw-600"
+                className="fs-1 color-blueish mx-auto fw-600"
               />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              Risk Management
+              <Link to="store-moter-service">修理工場 モーターサービス</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              Calculate every possible risk in your business, take <br />
-              control over them.
+              車の修理工場。板金・塗装・換装・車検・ロードサービス、車のトラブル、お悩み、お気軽にお問い合わせください。
+            </p>
+            <p className="pt-3">
+              <Link to="store-moter-service">詳細はこちら</Link>
             </p>
           </MotionBox>
           <MotionBox>
@@ -96,40 +103,38 @@ const ServiceInPage: React.FC = () => {
               className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
               style={{ height: 100, width: 100 }}
             >
-              {/* <span className="icon-Bar-Chart5 fs-3 color-blueish mx-auto fw-600"></span> */}
               <FontAwesomeIcon
                 icon={faToolbox}
-                className="fs-3 color-blueish mx-auto fw-600"
+                className="fs-1 color-blueish mx-auto fw-600"
               />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              Market Research
+              新車・中古車 販売
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
               Know the market before taking any step, reduce <br />
               risks before you go.{' '}
             </p>
           </MotionBox>
-          <MotionBox>
+          {/* <MotionBox>
             <div
               className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
               style={{ height: 100, width: 100 }}
             >
-              {/* <span className="icon-Bar-Chart5 fs-3 color-blueish mx-auto fw-600"></span> */}
               <FontAwesomeIcon
                 icon={faComments}
-                className="fs-3 color-blueish mx-auto fw-600"
+                className="fs-1 color-blueish mx-auto fw-600"
               />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              Quality Services
+              コンタクト
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
               Experience unparalleled service, from beginning
               <br />
               to final construction.
             </p>
-          </MotionBox>
+          </MotionBox> */}
         </div>
       </div>
     </section>

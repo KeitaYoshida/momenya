@@ -1,6 +1,21 @@
+@import './../../scss/colors.scss';
+
 .image-box {
   min-height: 400px;
+  position:relative;
 }
+.title-list {
+  color: white;
+  &:hover {
+    color: white;
+  }
+  border-radius: 10px;
+  background-color: $primay-color;
+
+  // border: 1px solid $primay-color;
+  // border-bottom: 1px solid $primary-color;
+}
+
 #sensha {
   background-image: url("src/assets/images/service/sensha.jpg");
 }

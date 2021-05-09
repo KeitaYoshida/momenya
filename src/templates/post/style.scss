@@ -18,6 +18,15 @@
     .badge {
       margin-right: 3px;
     }
+    .badge-primary {
+      color: white;
+      background-color: $primay-color;
+      border: 1px solid $primay-color;
+    }
+    .badge-secondary {
+      color: $primay-color;
+      border: 1px solid $primay-color;
+    }
 
     time {
       font-size: $font-size-xs;

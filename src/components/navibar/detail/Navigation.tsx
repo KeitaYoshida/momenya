@@ -24,11 +24,17 @@ const variants = {
 
 export const Navigation = () => (
   <>
-    <p>
-      <Link to="/">Momenya</Link>
+    <p className="py-0 my-1">
+      <Link to="/">木綿屋</Link>
+    </p>
+    <p className="py-0 my-1 fs--1">
+      <Link to="/store-gasolin">ガソリンスタンド 下條ＳＳ</Link>
+    </p>
+    <p className="py-0 my-1 fs--1">
+      <Link to="/store-moter-service">修理工場 モーターサービス</Link>
     </p>
     <HrDiv />
-    <motion.ul variants={variants} className="mt-3">
+    <motion.ul variants={variants} className="mt-3 px-0">
       {Service.map((service, i) => (
         <MenuItem title={service.title} link={service.link} index={i} key={i} />
       ))}

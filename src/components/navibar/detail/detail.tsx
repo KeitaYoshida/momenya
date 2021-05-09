@@ -20,7 +20,8 @@ const sidebar = {
   }),
   closed: (custom = { height: 1000, width: 200 }) => ({
     // clipPath: `circle(30px at 40px ${custom.width})`,
-    clipPath: `circle(25px at calc(100% - 28px) 28px`,
+    // clipPath: `circle(25px at calc(100% - 28px) 28px`,
+    clipPath: `circle(20px at calc(100% - 28px) 28px`,
     transition: {
       delay: 0.2,
       type: 'spring',

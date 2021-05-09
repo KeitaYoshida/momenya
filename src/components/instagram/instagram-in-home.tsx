@@ -12,20 +12,20 @@ import './row.scss'
 const Insta = () => {
   const instaPhotos = useInstagram()
   const settings = {
-    // dots: true,
+    dots: true,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 4.5,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 7000,
-    autoplaySpeed: 1,
+    // autoplay: true,
+    // speed: 7000,
+    // autoplaySpeed: 1,
     cssEase: 'linear',
     draggable: true,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 4.5,
+          slidesToShow: 4,
         },
       },
       {
@@ -43,13 +43,13 @@ const Insta = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 1.5,
         },
       },
     ],
   }
   return (
-    <div className="w-100 top-in mb-0 overflow-hidden">
+    <section className="w-100 top-in mb-0 overflow-hidden background-11">
       <OpacityBox time={3}>
         <Slider {...settings}>
           {
@@ -63,14 +63,14 @@ const Insta = () => {
                 <GatsbyImage
                   image={photo.gatsbyImageData}
                   className="img-size"
-                  alt={photo.caption}
+                  alt={photo.caption || 'alt'}
                 />
               </a>
             ))
           }
         </Slider>
       </OpacityBox>
-    </div>
+    </section>
   )
 }
 export default Insta

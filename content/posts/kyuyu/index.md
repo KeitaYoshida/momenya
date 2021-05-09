@@ -5,7 +5,7 @@ layout: post
 path: '/kyuyu/'
 image: ./kyuyu.jpg
 description: 'Johannes Gensfleisch zur Laden zum Gutenberg (c. 1398 – 1468) was a German blacksmith, goldsmith, printer, and publisher who introduced printing to Europe.'
-category: Typography
+category: サービス
 tags:
   - Movable Type
   - Johannes Gutenberg
