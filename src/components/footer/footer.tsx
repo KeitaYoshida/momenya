@@ -9,13 +9,13 @@ interface Props {
 
 const Footer: React.FC<Props> = ({ author, title }: Props) => (
   <div className="footer">
-    <section style={{ backgroundColor: '#3D4C6F' }}>
+    <section style={{ backgroundColor: '#b342a3855' }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div
               className="color-white p-5 p-lg-6 radius-secondary"
-              style={{ backgroundColor: '#2a3855' }}
+              style={{ backgroundColor: '#9c2d38' }}
             >
               <h4 className="color-white fs-1 fs-lg-2 mb-1">
                 Sign up for email alerts
@@ -88,7 +88,7 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
                         style={{
                           height: '40px',
                           width: '40px',
-                          backgroundColor: '#2a3855',
+                          backgroundColor: '#9c2d38',
                         }}
                       >
                         <span className="w-100 fa fa-linkedin color-white"></span>
@@ -109,7 +109,7 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
                         style={{
                           height: '40px',
                           width: '40px',
-                          backgroundColor: '#2a3855',
+                          backgroundColor: '#9c2d38',
                         }}
                       >
                         <span className="w-100 fa fa-twitter color-white"></span>
@@ -130,7 +130,7 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
                         style={{
                           height: '40px',
                           width: '40px',
-                          backgroundColor: '#2a3855',
+                          backgroundColor: '#9c2d38',
                         }}
                       >
                         <span className="w-100 fa fa-facebook color-white"></span>
@@ -151,7 +151,7 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
                         style={{
                           height: '40px',
                           width: '40px',
-                          backgroundColor: '#2a3855',
+                          backgroundColor: '#9c2d38',
                         }}
                       >
                         <span className="w-100 fa fa-google-plus color-white"></span>
@@ -172,7 +172,7 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
     </section>
     <section
       className="text-center py-4"
-      style={{ backgroundColor: '#2a3855', minHeight: '0' }}
+      style={{ backgroundColor: '#9c2d38', minHeight: '0' }}
     >
       <div className="container">
         <div className="row align-items-center" style={{ opacity: 0.85 }}>
