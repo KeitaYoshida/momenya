@@ -32,7 +32,7 @@ const MotionBox: React.FC<Props> = ({ children }: Props) => {
   return (
     <motion.div
       ref={ref}
-      className="col-12 col-sm-4 mt-4"
+      className="col-12 col-sm-6 mt-6"
       animate={inView ? 'opne' : 'closed'}
       variants={variants}
       transition={{ duration: 1.5 }}
@@ -49,7 +49,7 @@ const ServiceInPage: React.FC = () => {
         <div className="row justify-content-center">
           <div className="col-10 col-md-6">
             <h3 className="color-primary fs-2 fs-lg-3">
-              フルマネージド カー サービス
+              トータルカーライフサポート
             </h3>
             <p className="px-lg-4 mt-3">
               ガソリンスタンドと修理工場、両施設を併設する私達だからこそできることがあります
@@ -69,10 +69,10 @@ const ServiceInPage: React.FC = () => {
               />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              <Link to="store-gasolin">ガソリンスタンド 下條SS</Link>
+              <Link to="store-gasolin">サービスステーション</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              ガソリンスタンド。給油（ガソリン・灯油）・洗車・タイヤ交換・オイル交換・カー保険様々なサービスを提供しております。
+              給油や洗車、オイル交換、タイヤ交換、灯油配送、プロパンガス販売、、、様々なサービスを提供しています
             </p>
             <p className="pt-3">
               <Link to="store-gasolin">詳細はこちら</Link>
@@ -89,52 +89,15 @@ const ServiceInPage: React.FC = () => {
               />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              <Link to="store-moter-service">修理工場 モーターサービス</Link>
+              <Link to="store-moter-service">モーターサービス</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              車の修理工場。板金・塗装・換装・車検・ロードサービス、車のトラブル、お悩み、お気軽にお問い合わせください。
+              全メーカー全車種対応可。車検、点検はもちろんもしものときはロードサービス（板金・修理）レンタカー・保険も扱っています。
             </p>
             <p className="pt-3">
               <Link to="store-moter-service">詳細はこちら</Link>
             </p>
           </MotionBox>
-          <MotionBox>
-            <div
-              className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
-              style={{ height: 100, width: 100 }}
-            >
-              <FontAwesomeIcon
-                icon={faToolbox}
-                className="fs-1 color-blueish mx-auto fw-600"
-              />
-            </div>
-            <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              新車・中古車 販売
-            </h5>
-            <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              Know the market before taking any step, reduce <br />
-              risks before you go.{' '}
-            </p>
-          </MotionBox>
-          {/* <MotionBox>
-            <div
-              className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
-              style={{ height: 100, width: 100 }}
-            >
-              <FontAwesomeIcon
-                icon={faComments}
-                className="fs-1 color-blueish mx-auto fw-600"
-              />
-            </div>
-            <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              コンタクト
-            </h5>
-            <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              Experience unparalleled service, from beginning
-              <br />
-              to final construction.
-            </p>
-          </MotionBox> */}
         </div>
       </div>
     </section>

@@ -14,23 +14,13 @@ const TopSlider: React.FC = () => {
         <div className="py-5 px-3 py-sm-5 px-sm-5 my-8 top-message">
           <div className="overflow-hidden">
             <h1 className="fs-1 fs-md-2">
-              <span className="d-inline-block">車のサポート</span>
-              <span className="d-inline-block">お任せください</span>
+              <span className="d-inline-block">届けたい、確かな安全と</span>
+              <span className="d-inline-block">真心あるサービス</span>
             </h1>
           </div>
           <div className="overflow-hidden">
             <p className="color-primary mt-2 mb-2 lh-2 fs-0 fs-md-1 ">
-              <strong>木綿屋モーターサービス</strong>
-              では、
-              <strong>ガソリンスタンドと車の修理工場を併設</strong>
-              し、ガソリンスタンドだけでも、
-              <strong>
-                修理工場だけでも行き届かない、様々なサービスを提供
-              </strong>
-              しております。
-              また、新車・中古車販売、カー保険、ロードサービスも行っており、
-              <strong>車に関する様々なお悩み、ご相談にも対応できます。</strong>
-              まずはお気軽にお問い合わせください。
+              車のサポートお任せください
             </p>
           </div>
           <div className="overflow-hidden">

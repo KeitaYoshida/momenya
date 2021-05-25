@@ -7,12 +7,18 @@
 .title-list {
   color: white;
   &:hover {
-    color: white;
+    // color: white;
   }
-  border-radius: 10px;
-  background-color: $primay-color;
-
-  // border: 1px solid $primay-color;
+  // border-radius: 10px;
+  // background-color: $primay-color;
+  // color: white;
+  /* border-radius: 10px; */
+  /* background-color: #b3424a; */
+  border-bottom: 1px solid #b87c80;
+  color: #b3424a;
+  width: 9rem;
+  font-size: 0.9rem !important;
+  // border: 1pe solid $primay-color;
   // border-bottom: 1px solid $primary-color;
 }
 
@@ -39,4 +45,10 @@
 }
 #taiyakoukan {
   background-image: url("src/assets/images/service/taiyakoukan.jpg");
+}
+#oil {
+  background-image: url("src/assets/images/service/oil.jpg");
+}
+#rent {
+  background-image: url("src/assets/images/service/rent.jpg");
 }

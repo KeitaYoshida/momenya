@@ -9,7 +9,7 @@ interface Props {
 
 const Footer: React.FC<Props> = ({ author, title }: Props) => (
   <div className="footer">
-    <section style={{ backgroundColor: '#b342a3855' }}>
+    <section style={{ backgroundColor: '#b3424a' }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">

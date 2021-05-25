@@ -1,53 +1,67 @@
 const Service = [
   {
-    title: '手洗い洗車・機械洗車・コーティング',
+    title: '給油',
     value:
-      'お気軽に使用いただける機械洗車に加え、こだわりの手洗い洗車、コーティング、車内清掃を提供しております',
-    image: 'sensha',
-    link: 'sensha',
-  },
-  {
-    title: '給油・オイル交換・空気圧の確認',
-    value:
-      'ガソリン（ハイオク・レギュラー・軽油）に加え灯油の給油、またオイル交換、空気圧の確認も承っております',
+      '当店はフルサービススタンドとしてお客様のカーライフを支えています。笑顔と明るいあいさつ、真心のこもった接客を心がけています',
     image: 'kyuyu',
     link: 'kyuyu',
   },
   {
-    title: 'タイヤ交換・販売',
-    value: 'test',
+    title: '洗車',
+    value:
+      '本格ボディコーティング、手洗い洗車、機械洗車、オプションメニューなど、充実の洗車ラインナップでお客様の愛車をワンランク上の美しさへと',
+    image: 'sensha',
+    link: 'sensha',
+  },
+  {
+    title: 'オイル交換',
+    value:
+      'エンジンの仕様にあわせたオイルの粘度を取り揃えており、お客様の愛車に最適なオイルをご提供しております',
+    image: 'oil',
+    link: 'oil',
+  },
+  {
+    title: 'タイヤ',
+    value:
+      '丁寧でスピーディな作業で足元から安心をサポート\n 空気圧チェック、トルクじめまで',
     image: 'taiyakoukan',
     link: 'taiyakoukan',
   },
   {
-    title: '車検・点検',
+    title: '保険',
     value: 'test',
-    image: 'shaken',
-    link: 'shaken',
+    image: 'hoken',
+    link: 'hoken',
   },
   {
-    title: '修理・板金・塗装',
-    value: 'test',
-    image: 'bankin',
-    link: 'bankin',
-  },
-  {
-    title: '新車・中古車販売',
+    title: '車販',
     value: 'test',
     image: 'hanbai',
     link: 'hanbai',
   },
   {
-    title: 'CAR保険',
+    title: '車検・点検',
+    value: '自社工場内で点検整備〜検査まで一貫して行える',
+    image: 'shaken',
+    link: 'shaken',
+  },
+  {
+    title: '鈑金',
     value: 'test',
-    image: 'hoken',
-    link: 'hoken',
+    image: 'bankin',
+    link: 'bankin',
   },
   {
     title: 'ロードサービス',
     value: 'test',
     image: 'road',
     link: 'road',
+  },
+  {
+    title: 'レンタカー',
+    value: 'test',
+    image: 'rent',
+    link: 'rent',
   },
 ]
 

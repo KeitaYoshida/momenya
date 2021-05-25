@@ -16,7 +16,7 @@ const Cnt: React.FC = () => {
   const values = Service
   const topClassFirst = 'row no-gutters pos-relative mt-6'
   const topClass = 'row no-gutters pos-relative mt-4 mt-lg-0'
-  const order2 = 'order-lg-2'
+  // const order2 = 'order-lg-2'
   return (
     <>
       {values.map((row, index) => {

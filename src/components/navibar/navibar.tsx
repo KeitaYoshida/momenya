@@ -98,7 +98,7 @@ const Navibar: React.FC<Props> = ({ location, title }: Props) => {
             logo
           </a> */}
           <Link className="text-center pr-5" to="/">
-            <h1 className="navbar-brand mb-0 fs-0 fs-md-1">{title}</h1>
+            <h1 className="navbar-brand mb-0 fs-0 fs-md-2">{title}</h1>
           </Link>
           <div
             // className="collapse navbar-collapse d-none d-md-block"

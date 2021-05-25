@@ -33,7 +33,7 @@ interface Props {
 const Post: React.FC<Props> = ({ data, options }: Props) => {
   const frontmatter = data.post?.frontmatter
   const category = frontmatter?.category
-  const isService = category === 'サービス'
+  const isService = category === 'サービス' || category === 'CARサービス'
   const path = frontmatter?.path || ''
   const image = frontmatter?.image || null
   const { isIndex, adsense } = options
@@ -69,8 +69,16 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
           }}
         />
         {isMore && <Button path={path} label="MORE" primary={true} />}
-        {!isIndex && <Adsense clientId={adsense} slotId="" format="auto" />}
-        {isService && <ServiceList />}
+        {!isIndex && (
+          <div className="pt-8">
+            <Adsense clientId={adsense} slotId="" format="auto" />
+          </div>
+        )}
+        {isService && (
+          <div className="pt-8">
+            <ServiceList />
+          </div>
+        )}
       </div>
     </div>
   )

@@ -43,9 +43,24 @@
       padding-top: 10px;
       margin-bottom: 20px;
     }
+    h3, h4, h5, h6{
+      margin-bottom: 0;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 1.1rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+    h6 {
+      font-size: 0.9rem;
+    }
 
     p {
-      margin: 20px 0;
+      margin: 0.3rem 0;
     }
 
     blockquote {
