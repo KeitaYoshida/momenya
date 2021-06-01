@@ -60,7 +60,6 @@ export const pageQuery = graphql`
         category
         tags
         description
-        date(formatString: "YYYY/MM/DD")
         image {
           childImageSharp {
             gatsbyImageData

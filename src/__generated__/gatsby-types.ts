@@ -394,15 +394,6 @@ type MarkdownRemarkFrontmatter = {
   readonly description: Maybe<Scalars['String']>;
   readonly category: Maybe<Scalars['String']>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
-  readonly date: Maybe<Scalars['Date']>;
-};
-
-
-type MarkdownRemarkFrontmatter_dateArgs = {
-  formatString: Maybe<Scalars['String']>;
-  fromNow: Maybe<Scalars['Boolean']>;
-  difference: Maybe<Scalars['String']>;
-  locale: Maybe<Scalars['String']>;
 };
 
 
@@ -1192,7 +1183,6 @@ type MarkdownRemarkFrontmatterFilterInput = {
   readonly description: Maybe<StringQueryOperatorInput>;
   readonly category: Maybe<StringQueryOperatorInput>;
   readonly tags: Maybe<StringQueryOperatorInput>;
-  readonly date: Maybe<DateQueryOperatorInput>;
 };
 
 type FileFilterInput = {
@@ -1492,7 +1482,6 @@ type FileFieldsEnum =
   | 'childrenMarkdownRemark.frontmatter.description'
   | 'childrenMarkdownRemark.frontmatter.category'
   | 'childrenMarkdownRemark.frontmatter.tags'
-  | 'childrenMarkdownRemark.frontmatter.date'
   | 'childrenMarkdownRemark.excerpt'
   | 'childrenMarkdownRemark.rawMarkdownBody'
   | 'childrenMarkdownRemark.fileAbsolutePath'
@@ -1591,7 +1580,6 @@ type FileFieldsEnum =
   | 'childMarkdownRemark.frontmatter.description'
   | 'childMarkdownRemark.frontmatter.category'
   | 'childMarkdownRemark.frontmatter.tags'
-  | 'childMarkdownRemark.frontmatter.date'
   | 'childMarkdownRemark.excerpt'
   | 'childMarkdownRemark.rawMarkdownBody'
   | 'childMarkdownRemark.fileAbsolutePath'
@@ -2987,7 +2975,6 @@ type MarkdownRemarkFieldsEnum =
   | 'frontmatter.description'
   | 'frontmatter.category'
   | 'frontmatter.tags'
-  | 'frontmatter.date'
   | 'excerpt'
   | 'rawMarkdownBody'
   | 'fileAbsolutePath'
@@ -3561,7 +3548,6 @@ type InstaNodeFieldsEnum =
   | 'localFile.childrenMarkdownRemark.frontmatter.description'
   | 'localFile.childrenMarkdownRemark.frontmatter.category'
   | 'localFile.childrenMarkdownRemark.frontmatter.tags'
-  | 'localFile.childrenMarkdownRemark.frontmatter.date'
   | 'localFile.childrenMarkdownRemark.excerpt'
   | 'localFile.childrenMarkdownRemark.rawMarkdownBody'
   | 'localFile.childrenMarkdownRemark.fileAbsolutePath'
@@ -3597,7 +3583,6 @@ type InstaNodeFieldsEnum =
   | 'localFile.childMarkdownRemark.frontmatter.description'
   | 'localFile.childMarkdownRemark.frontmatter.category'
   | 'localFile.childMarkdownRemark.frontmatter.tags'
-  | 'localFile.childMarkdownRemark.frontmatter.date'
   | 'localFile.childMarkdownRemark.excerpt'
   | 'localFile.childMarkdownRemark.rawMarkdownBody'
   | 'localFile.childMarkdownRemark.fileAbsolutePath'
@@ -4181,7 +4166,7 @@ type PostByPathQueryVariables = Exact<{
 type PostByPathQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }>, readonly post: Maybe<(
     Pick<MarkdownRemark, 'id' | 'html'>
     & { readonly frontmatter: Maybe<(
-      Pick<MarkdownRemarkFrontmatter, 'layout' | 'title' | 'path' | 'category' | 'tags' | 'description' | 'date'>
+      Pick<MarkdownRemarkFrontmatter, 'layout' | 'title' | 'path' | 'category' | 'tags' | 'description'>
       & { readonly image: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
     )> }
   )> };

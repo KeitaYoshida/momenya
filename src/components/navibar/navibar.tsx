@@ -46,49 +46,10 @@ const Links: React.FC<NavLink> = ({ list }: NavLink) => {
   )
 }
 
-const info: ShopInfo = {
-  address: '長野県下伊那郡下條村睦沢９３０４−１',
-  open: '月-日, 7.00-20.00',
-  tell: '0260-27-2235',
-}
-
-const InfoNav: React.FC = () => {
-  return (
-    <nav className="background-primary py-3 d-block" id="top-info-home">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-auto d-none d-lg-block">
-            <span className="fa fa-map-marker color-warning fw-800 icon-position-fix"></span>
-            <p className="ml-2 mb-0 fs--1 d-inline color-white fw-700">
-              {info.address}
-            </p>
-          </div>
-          <div className="col-auto ml-md-auto order-md-2">
-            <span className="fa fa-clock-o color-warning fw-800 icon-position-fix"></span>
-            <p className="ml-2 mb-0 fs--1 d-inline color-white fw-700">
-              {info.open}
-            </p>
-          </div>
-          <div className="col-auto">
-            <span className="fa fa-phone color-warning fw-800 icon-position-fix"></span>
-            <a
-              className="ml-2 mb-0 fs--1 d-inline color-white fw-700"
-              href="tel:2123865575"
-            >
-              {info.tell}
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  )
-}
-
 const Navibar: React.FC<Props> = ({ location, title }: Props) => {
   return (
     // <div id="top-navigation">
     <>
-      <InfoNav />
       <nav
         className="navbar navbar-expand-lg  navbar-expand sticky-top"
         id="main-navi"

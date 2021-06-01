@@ -69,14 +69,17 @@ const ServiceInPage: React.FC = () => {
               />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
-              <Link to="store-gasolin">サービスステーション</Link>
+              <Link to="store-gasolin">ガソリンスタンド</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
               給油や洗車、オイル交換、タイヤ交換、灯油配送、プロパンガス販売、、、様々なサービスを提供しています
             </p>
-            <p className="pt-3">
-              <Link to="store-gasolin">詳細はこちら</Link>
-            </p>
+            <div className="d-inline-block info-box">
+              <p className="my-0 pb-1 mt-2 fs--1 address-color">営業時間：月-土, 7:00-20:00</p>
+              <p className="my-0 pb-1 fs--1 address-color">（祝日は休業日）</p>
+              <p className="my-0 pb-1 fs--1 address-color">電話番号：0260-27-2232</p>
+              <p className="my-0 mb-2 fs--1 address-color">長野県下伊那郡下條村睦沢９２９７−４</p>
+            </div>
           </MotionBox>
           <MotionBox>
             <div
@@ -92,11 +95,14 @@ const ServiceInPage: React.FC = () => {
               <Link to="store-moter-service">モーターサービス</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              全メーカー全車種対応可。車検、点検はもちろんもしものときはロードサービス（板金・修理）レンタカー・保険も扱っています。
+              全メーカー全車種対応可<br />車検・点検はもちろん、もしもの時はレッカーサービス（板金・修理）、レンタカー・保険も扱っています
             </p>
-            <p className="pt-3">
-              <Link to="store-moter-service">詳細はこちら</Link>
-            </p>
+            <div className="d-inline-block info-box">
+              <p className="my-0 pb-1 mt-2 fs--1 address-color">営業時間：月-土, 8:30-17:30</p>
+              <p className="my-0 pb-1 fs--1 address-color">（第２・第４土・祝日は休業日）</p>
+              <p className="my-0 pb-1 fs--1 address-color">電話番号：0260-27-2235</p>
+              <p className="my-0 mb-2 fs--1 address-color">長野県下伊那郡下條村睦沢９３０４−１</p>
+            </div>
           </MotionBox>
         </div>
       </div>

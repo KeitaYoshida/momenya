@@ -19,14 +19,17 @@ const TopSlider: React.FC = () => {
             </h1>
           </div>
           <div className="overflow-hidden">
-            <p className="color-primary mt-2 mb-2 lh-2 fs-0 fs-md-1 ">
-              車のサポートお任せください
-            </p>
+            <h2 className="color-primary mt-2 mb-2 lh-2 fs-2 fs-md-2 ">
+              車のサポート&nbsp;&nbsp;お任せください
+            </h2>
           </div>
           <div className="overflow-hidden">
-            <div>
-              <a className="btn btn-primary mr-3 mt-3" href="#">
-                お問い合わせ
+            <div className="d-inline">
+              <a className="btn btn-primary mr-3 mt-3" href="store-gasolin">ガソリンスタンド</a>
+            </div>
+            <div className="d-inline">
+              <a className="btn btn-primary mr-3 mt-3" href="store-moter-service">
+                車検・修理・車販
               </a>
             </div>
           </div>

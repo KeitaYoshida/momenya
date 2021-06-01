@@ -84,10 +84,10 @@ const ServiceList: React.FC = () => {
       <div className="container py-8 ">
         <h3 className="text-center fs-2 fs-md-3">サービス</h3>
         <HrDiv />
-        <div className="mt-3 mx-md-5 text-center">
+        <div className="mt-3 text-center">
           {service.map((row, index) => (
             <motion.a
-              className="text-center fs--1 fs-md--1 d-inline-block mx-1 mx-md-2 px-3 py-1 my-1 title-list"
+              className="text-center fs--1 fs-md--1 d-inline-block mx-1 mx-md-2 px-1 py-1 my-1 title-list"
               href={row.link}
               whileHover={{ scale: 1.2 }}
               key={index}

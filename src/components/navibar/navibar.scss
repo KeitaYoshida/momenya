@@ -2,7 +2,10 @@
 
 #main-navi {
   border-bottom: 1px solid $primay-color;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(169, 57, 67, 1);
+  h1 {
+    color: white;
+  }
   backdrop-filter: blur(3px);
   .dropdown-menu {
     border:none;
