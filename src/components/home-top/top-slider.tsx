@@ -1,17 +1,21 @@
+// @ts-nocheck
 import React from 'react'
-import OpacityBox from 'src/components/motion-box/opacity-box'
-
 import './home-top-style.scss'
+import { StaticImage } from "gatsby-plugin-image"
 
 const TopSlider: React.FC = () => {
   return (
     <section
-      // className="h-full align-items-center py-0  justify-content-center "
-      className="h-full h-md-75 py-0 justify-content-center align-items-center"
-      id="home-top-cnt"
+      className="h-full py-0 "
     >
-      <OpacityBox time={1}>
-        <div className="py-5 px-3 py-sm-5 px-sm-5 my-8 top-message">
+      <ul className="slider_fade">
+        <li><StaticImage src="../../assets/images/momenya_01.jpeg" alt="m1" /></li>
+        <li><StaticImage src="../../assets/images/momenya_02.jpeg" alt="m2" /></li>
+        <li><StaticImage src="../../assets/images/momenya_03.jpeg" alt="m3" /></li>
+        <li><StaticImage src="../../assets/images/momenya_04.jpeg" alt="m4" /></li>
+      </ul>
+      <div className="message-content h-full">
+        <div className="py-5 px-3 py-sm-5 px-sm-5 top-message">
           <div className="overflow-hidden">
             <h1 className="fs-1 fs-md-2">
               <span className="d-inline-block">届けたい、確かな安全と</span>
@@ -33,8 +37,8 @@ const TopSlider: React.FC = () => {
               </a>
             </div>
           </div>
-        </div>
-      </OpacityBox>
+        </div> 
+      </div>
     </section>
   )
 }

@@ -26,6 +26,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/assets/`,
+        name: 'img',
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -107,11 +114,5 @@ module.exports = {
         hashtags: true,
       },
     },
-    // {
-    //   resolve: `gatsby-source-instagram`,
-    //   options: {
-    //     username: `4827544420`,
-    //   },
-    // },
   ],
 }

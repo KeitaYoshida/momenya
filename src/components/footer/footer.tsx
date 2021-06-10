@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Link } from 'gatsby'
 import React from 'react'
 import './style.scss'
@@ -49,12 +50,12 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
                 <ul className="list-unstyled">
                   <li className="mb-3">
                     <a className="color-white" href="#">
-                      Contact Us
+                      個人情報取り扱い
                     </a>
                   </li>
                   <li className="mb-3">
                     <a className="color-white" href="#">
-                      FAQ
+                      感染症対策
                     </a>
                   </li>
                   <li className="mb-3">

@@ -19,12 +19,17 @@ tags:
 <hr class="in-post-line" />
 国産メーカーから海外メーカーまでお客様のご要望に合わせてご提案します
 
-<h3><a href="https://www.y-yokohama.com/product/tire/" target="_blank">ヨコハマタイヤ</a> </h3>
-<h3><a href="https://tyre.dunlop.co.jp/" target="_blank">ダンロップ</a></h3>
-<h3><a href="https://tire.bridgestone.co.jp/" target="_blank">ブリヂストン</a></h3>
-<h3><a href="https://www.toyotires.jp/" target="_blank">トーヨー</a></h3>
+<div style="padding-top:1rem;">
+  <img src="./momenya_taiya.JPG" />
+</div>
+
+<span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://www.y-yokohama.com/product/tire/" target="_blank">ヨコハマ</a></span>
+<span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://tyre.dunlop.co.jp/" target="_blank">ダンロップ</a></span>
+<span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://tire.bridgestone.co.jp/" target="_blank">ブリヂストン</a></span>
+<span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://www.toyotires.jp/" target="_blank">トーヨー</a></span>
 
 ## ご予約・お問い合わせはこちら
-## ☎ 0260-27-2232
+<a href="tel:0260272232"><span style="font-size:2rem;">☎ 0260-27-2232</span></a>
+
 ####  営業時間：月-土, 7:00-20:00（祝日は休業日）
 ####  長野県下伊那郡下條村睦沢９２９７−４

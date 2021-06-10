@@ -29,7 +29,6 @@ const BlogIndex: React.FC<Props> = ({ data, location }: Props) => {
       <Insta />
       <Service />
       <ServiceList />
-      <Corona />
       <Saiyo />
     </Layout>
   )

@@ -15,22 +15,15 @@ tags:
   - 室内清掃
 ---
 
-### 機械式洗車 2020年導入
-<img src="./sensha.jpg">
-
-### 洗車機コーティング
-<hr class="in-post-line" />
-
-<!-- <details>
-  <summary>VDSスーパードロップコーティング</summary>
-  <p>
-  <img src="./sensha.jpg">
-  </p>
-</details> -->
+## 新型 洗車機 2020年導入
+<img src="./auto.jpg">
 
 ## VDSスーパードロップコーティング
 ### (ガラスコーティング)
 新車より美しいツヤが超期間持続。ガラス系の強固被膜で汚れから守り、愛車の価値が上がるコーティング
+<div style="padding-top:1rem;">
+  <img src="./momenya-vds-image.jpg"/>
+</div>
 
 ## エステコート
 ### (洗車機コーティング)
@@ -52,7 +45,12 @@ tags:
 #### ヘッドライトクリーニング
 色あせや黄ばみを専用クリーナーでスッキリ除去
 
+<div style="padding-top:1rem;">
+  <img src="./momenya-sensha.jpg" class="pt-3" />
+</div>
+
 ## ご予約・お問い合わせはこちら
-## ☎ 0260-27-2232
+<a href="tel:0260272232"><span style="font-size:2rem;">☎ 0260-27-2232</span></a>
+
 ####  営業時間：月-土, 7:00-20:00（祝日は休業日）
 ####  長野県下伊那郡下條村睦沢９２９７−４

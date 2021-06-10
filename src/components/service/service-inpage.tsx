@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
@@ -77,7 +78,7 @@ const ServiceInPage: React.FC = () => {
             <div className="d-inline-block info-box">
               <p className="my-0 pb-1 mt-2 fs--1 address-color">営業時間：月-土, 7:00-20:00</p>
               <p className="my-0 pb-1 fs--1 address-color">（祝日は休業日）</p>
-              <p className="my-0 pb-1 fs--1 address-color">電話番号：0260-27-2232</p>
+              <p className="my-0 pb-1 fs--1 address-color"><a href="tel:0260272232">電話番号：0260-27-2232</a></p>
               <p className="my-0 mb-2 fs--1 address-color">長野県下伊那郡下條村睦沢９２９７−４</p>
             </div>
           </MotionBox>
@@ -100,7 +101,7 @@ const ServiceInPage: React.FC = () => {
             <div className="d-inline-block info-box">
               <p className="my-0 pb-1 mt-2 fs--1 address-color">営業時間：月-土, 8:30-17:30</p>
               <p className="my-0 pb-1 fs--1 address-color">（第２・第４土・祝日は休業日）</p>
-              <p className="my-0 pb-1 fs--1 address-color">電話番号：0260-27-2235</p>
+              <p className="my-0 pb-1 fs--1 address-color"><a href="tel:0260272235">電話番号：0260-27-2235</a></p>
               <p className="my-0 mb-2 fs--1 address-color">長野県下伊那郡下條村睦沢９３０４−１</p>
             </div>
           </MotionBox>
