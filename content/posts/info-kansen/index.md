@@ -1,9 +1,9 @@
 ---
-title: '板金・塗装 - 下條村 車の整備・車検・販売 -'
+title: '感染症対策 - 下條村 車の整備・車検・販売 -'
 layout: post
-path: '/bankin/'
+path: '/info-kansen/'
 image: ./bankin.jpg
-description: '小さなキズ・凹みから事故修理まで、丁寧な板金塗装でお客様の愛車を蘇らせます'
+description: '小さなキズ、凹みから、事故修理まで、丁寧な板金塗装でお客様のお車をサポートいたします'
 category: Typography
 tags:
   - Movable Type

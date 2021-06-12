@@ -49,12 +49,12 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
               <div className="col-6 col-lg-4 color-white ml-lg-auto">
                 <ul className="list-unstyled">
                   <li className="mb-3">
-                    <a className="color-white" href="#">
+                    <a className="color-white" href="/info-kozin">
                       個人情報取り扱い
                     </a>
                   </li>
                   <li className="mb-3">
-                    <a className="color-white" href="#">
+                    <a className="color-white" href="/info-kansen">
                       感染症対策
                     </a>
                   </li>

@@ -3,7 +3,7 @@ title: '自動車保険 - 下條村 車の整備・車検・販売 -'
 layout: post
 path: '/hoken/'
 image: ./hoken.jpg
-description: '自動車保険の見直し、条件に合った保険を提案します。万が一の時は台車の手配から納車までお手伝いいたします'
+description: '自動車保険の見直し、条件に合った保険を提案します。万が一の時は代車の手配から納車までお手伝いいたします'
 category: CARサービス
 tags:
   - Movable Type

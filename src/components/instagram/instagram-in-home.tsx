@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import useInstagram from './get-data'

@@ -73,7 +73,7 @@ const ServiceInPage: React.FC = () => {
               <Link to="store-gasolin">ガソリンスタンド</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              給油や洗車、オイル交換、タイヤ交換、灯油配送、プロパンガス販売、、、様々なサービスを提供しています
+              給油やコーティング・洗車、オイル交換、タイヤ販売・交換、灯油配送、プロパンガス販売、、、様々なサービスを提供しています
             </p>
             <div className="d-inline-block info-box">
               <p className="my-0 pb-1 mt-2 fs--1 address-color">営業時間：月-土, 7:00-20:00</p>

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
@@ -74,11 +75,9 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
             <Adsense clientId={adsense} slotId="" format="auto" />
           </div>
         )}
-        {isService && (
-          <div className="pt-8">
-            <ServiceList />
-          </div>
-        )}
+	<div className="pt-0">
+	<ServiceList />
+	</div>
       </div>
     </div>
   )
