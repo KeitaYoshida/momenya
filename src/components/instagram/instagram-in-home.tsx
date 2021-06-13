@@ -50,7 +50,7 @@ const Insta = () => {
   }
   return (
     <section className="w-100 top-in mb-0 overflow-hidden background-11">
-      <OpacityBox time={3}>
+      <div>
         <Slider {...settings}>
           {
             //@ts-ignore
@@ -69,7 +69,7 @@ const Insta = () => {
             ))
           }
         </Slider>
-      </OpacityBox>
+      </div>
     </section>
   )
 }

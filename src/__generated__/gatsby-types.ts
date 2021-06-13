@@ -784,24 +784,21 @@ type InstaNode = Node & {
   readonly username: Maybe<Scalars['String']>;
   readonly likes: Maybe<Scalars['Int']>;
   readonly caption: Maybe<Scalars['String']>;
-  readonly thumbnails: Maybe<ReadonlyArray<Maybe<InstaNodeThumbnails>>>;
   readonly mediaType: Maybe<Scalars['String']>;
   readonly preview: Maybe<Scalars['String']>;
   readonly original: Maybe<Scalars['String']>;
   readonly timestamp: Maybe<Scalars['Int']>;
-  readonly dimensions: Maybe<InstaNodeDimensions>;
+  readonly comments: Maybe<Scalars['Int']>;
+  readonly permalink: Maybe<Scalars['String']>;
+  readonly carouselImages: Maybe<ReadonlyArray<Maybe<InstaNodeCarouselImages>>>;
   readonly localFile: Maybe<File>;
 };
 
-type InstaNodeThumbnails = {
-  readonly src: Maybe<Scalars['String']>;
-  readonly config_width: Maybe<Scalars['Int']>;
-  readonly config_height: Maybe<Scalars['Int']>;
-};
-
-type InstaNodeDimensions = {
-  readonly height: Maybe<Scalars['Int']>;
-  readonly width: Maybe<Scalars['Int']>;
+type InstaNodeCarouselImages = {
+  readonly preview: Maybe<Scalars['String']>;
+  readonly media_url: Maybe<Scalars['String']>;
+  readonly id: Maybe<Scalars['String']>;
+  readonly localFile: Maybe<File>;
 };
 
 type Query = {
@@ -1100,12 +1097,13 @@ type Query_instaNodeArgs = {
   username: Maybe<StringQueryOperatorInput>;
   likes: Maybe<IntQueryOperatorInput>;
   caption: Maybe<StringQueryOperatorInput>;
-  thumbnails: Maybe<InstaNodeThumbnailsFilterListInput>;
   mediaType: Maybe<StringQueryOperatorInput>;
   preview: Maybe<StringQueryOperatorInput>;
   original: Maybe<StringQueryOperatorInput>;
   timestamp: Maybe<IntQueryOperatorInput>;
-  dimensions: Maybe<InstaNodeDimensionsFilterInput>;
+  comments: Maybe<IntQueryOperatorInput>;
+  permalink: Maybe<StringQueryOperatorInput>;
+  carouselImages: Maybe<InstaNodeCarouselImagesFilterListInput>;
   localFile: Maybe<FileFilterInput>;
 };
 
@@ -3664,19 +3662,15 @@ type SiteBuildMetadataSortInput = {
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
 
-type InstaNodeThumbnailsFilterListInput = {
-  readonly elemMatch: Maybe<InstaNodeThumbnailsFilterInput>;
+type InstaNodeCarouselImagesFilterListInput = {
+  readonly elemMatch: Maybe<InstaNodeCarouselImagesFilterInput>;
 };
 
-type InstaNodeThumbnailsFilterInput = {
-  readonly src: Maybe<StringQueryOperatorInput>;
-  readonly config_width: Maybe<IntQueryOperatorInput>;
-  readonly config_height: Maybe<IntQueryOperatorInput>;
-};
-
-type InstaNodeDimensionsFilterInput = {
-  readonly height: Maybe<IntQueryOperatorInput>;
-  readonly width: Maybe<IntQueryOperatorInput>;
+type InstaNodeCarouselImagesFilterInput = {
+  readonly preview: Maybe<StringQueryOperatorInput>;
+  readonly media_url: Maybe<StringQueryOperatorInput>;
+  readonly id: Maybe<StringQueryOperatorInput>;
+  readonly localFile: Maybe<FileFilterInput>;
 };
 
 type InstaNodeConnection = {
@@ -3815,16 +3809,95 @@ type InstaNodeFieldsEnum =
   | 'username'
   | 'likes'
   | 'caption'
-  | 'thumbnails'
-  | 'thumbnails.src'
-  | 'thumbnails.config_width'
-  | 'thumbnails.config_height'
   | 'mediaType'
   | 'preview'
   | 'original'
   | 'timestamp'
-  | 'dimensions.height'
-  | 'dimensions.width'
+  | 'comments'
+  | 'permalink'
+  | 'carouselImages'
+  | 'carouselImages.preview'
+  | 'carouselImages.media_url'
+  | 'carouselImages.id'
+  | 'carouselImages.localFile.sourceInstanceName'
+  | 'carouselImages.localFile.absolutePath'
+  | 'carouselImages.localFile.relativePath'
+  | 'carouselImages.localFile.extension'
+  | 'carouselImages.localFile.size'
+  | 'carouselImages.localFile.prettySize'
+  | 'carouselImages.localFile.modifiedTime'
+  | 'carouselImages.localFile.accessTime'
+  | 'carouselImages.localFile.changeTime'
+  | 'carouselImages.localFile.birthTime'
+  | 'carouselImages.localFile.root'
+  | 'carouselImages.localFile.dir'
+  | 'carouselImages.localFile.base'
+  | 'carouselImages.localFile.ext'
+  | 'carouselImages.localFile.name'
+  | 'carouselImages.localFile.relativeDirectory'
+  | 'carouselImages.localFile.dev'
+  | 'carouselImages.localFile.mode'
+  | 'carouselImages.localFile.nlink'
+  | 'carouselImages.localFile.uid'
+  | 'carouselImages.localFile.gid'
+  | 'carouselImages.localFile.rdev'
+  | 'carouselImages.localFile.ino'
+  | 'carouselImages.localFile.atimeMs'
+  | 'carouselImages.localFile.mtimeMs'
+  | 'carouselImages.localFile.ctimeMs'
+  | 'carouselImages.localFile.atime'
+  | 'carouselImages.localFile.mtime'
+  | 'carouselImages.localFile.ctime'
+  | 'carouselImages.localFile.birthtime'
+  | 'carouselImages.localFile.birthtimeMs'
+  | 'carouselImages.localFile.blksize'
+  | 'carouselImages.localFile.blocks'
+  | 'carouselImages.localFile.url'
+  | 'carouselImages.localFile.publicURL'
+  | 'carouselImages.localFile.childrenMarkdownRemark'
+  | 'carouselImages.localFile.childrenMarkdownRemark.id'
+  | 'carouselImages.localFile.childrenMarkdownRemark.excerpt'
+  | 'carouselImages.localFile.childrenMarkdownRemark.rawMarkdownBody'
+  | 'carouselImages.localFile.childrenMarkdownRemark.fileAbsolutePath'
+  | 'carouselImages.localFile.childrenMarkdownRemark.html'
+  | 'carouselImages.localFile.childrenMarkdownRemark.htmlAst'
+  | 'carouselImages.localFile.childrenMarkdownRemark.excerptAst'
+  | 'carouselImages.localFile.childrenMarkdownRemark.headings'
+  | 'carouselImages.localFile.childrenMarkdownRemark.timeToRead'
+  | 'carouselImages.localFile.childrenMarkdownRemark.tableOfContents'
+  | 'carouselImages.localFile.childrenMarkdownRemark.children'
+  | 'carouselImages.localFile.childMarkdownRemark.id'
+  | 'carouselImages.localFile.childMarkdownRemark.excerpt'
+  | 'carouselImages.localFile.childMarkdownRemark.rawMarkdownBody'
+  | 'carouselImages.localFile.childMarkdownRemark.fileAbsolutePath'
+  | 'carouselImages.localFile.childMarkdownRemark.html'
+  | 'carouselImages.localFile.childMarkdownRemark.htmlAst'
+  | 'carouselImages.localFile.childMarkdownRemark.excerptAst'
+  | 'carouselImages.localFile.childMarkdownRemark.headings'
+  | 'carouselImages.localFile.childMarkdownRemark.timeToRead'
+  | 'carouselImages.localFile.childMarkdownRemark.tableOfContents'
+  | 'carouselImages.localFile.childMarkdownRemark.children'
+  | 'carouselImages.localFile.childrenImageSharp'
+  | 'carouselImages.localFile.childrenImageSharp.gatsbyImageData'
+  | 'carouselImages.localFile.childrenImageSharp.id'
+  | 'carouselImages.localFile.childrenImageSharp.children'
+  | 'carouselImages.localFile.childImageSharp.gatsbyImageData'
+  | 'carouselImages.localFile.childImageSharp.id'
+  | 'carouselImages.localFile.childImageSharp.children'
+  | 'carouselImages.localFile.id'
+  | 'carouselImages.localFile.parent.id'
+  | 'carouselImages.localFile.parent.children'
+  | 'carouselImages.localFile.children'
+  | 'carouselImages.localFile.children.id'
+  | 'carouselImages.localFile.children.children'
+  | 'carouselImages.localFile.internal.content'
+  | 'carouselImages.localFile.internal.contentDigest'
+  | 'carouselImages.localFile.internal.description'
+  | 'carouselImages.localFile.internal.fieldOwners'
+  | 'carouselImages.localFile.internal.ignoreType'
+  | 'carouselImages.localFile.internal.mediaType'
+  | 'carouselImages.localFile.internal.owner'
+  | 'carouselImages.localFile.internal.type'
   | 'localFile.sourceInstanceName'
   | 'localFile.absolutePath'
   | 'localFile.relativePath'
@@ -4081,12 +4154,13 @@ type InstaNodeFilterInput = {
   readonly username: Maybe<StringQueryOperatorInput>;
   readonly likes: Maybe<IntQueryOperatorInput>;
   readonly caption: Maybe<StringQueryOperatorInput>;
-  readonly thumbnails: Maybe<InstaNodeThumbnailsFilterListInput>;
   readonly mediaType: Maybe<StringQueryOperatorInput>;
   readonly preview: Maybe<StringQueryOperatorInput>;
   readonly original: Maybe<StringQueryOperatorInput>;
   readonly timestamp: Maybe<IntQueryOperatorInput>;
-  readonly dimensions: Maybe<InstaNodeDimensionsFilterInput>;
+  readonly comments: Maybe<IntQueryOperatorInput>;
+  readonly permalink: Maybe<StringQueryOperatorInput>;
+  readonly carouselImages: Maybe<InstaNodeCarouselImagesFilterListInput>;
   readonly localFile: Maybe<FileFilterInput>;
 };
 
@@ -4094,27 +4168,6 @@ type InstaNodeSortInput = {
   readonly fields: Maybe<ReadonlyArray<Maybe<InstaNodeFieldsEnum>>>;
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
-
-type PostByPathQueryVariables = Exact<{
-  path: Scalars['String'];
-}>;
-
-
-type PostByPathQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }>, readonly post: Maybe<(
-    Pick<MarkdownRemark, 'id' | 'html'>
-    & { readonly frontmatter: Maybe<(
-      Pick<MarkdownRemarkFrontmatter, 'layout' | 'title' | 'path' | 'category' | 'tags' | 'description'>
-      & { readonly image: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
-    )> }
-  )> };
-
-type usersyoshidakeitadevmomenyasrccomponentsinstagramgetDataTsx2106883025QueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type usersyoshidakeitadevmomenyasrccomponentsinstagramgetDataTsx2106883025Query = { readonly allInstaNode: { readonly nodes: ReadonlyArray<(
-      Pick<InstaNode, 'id' | 'caption' | 'username'>
-      & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
-    )> } };
 
 type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -4151,5 +4204,26 @@ type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type PagesQueryQuery = { readonly allSiteFunction: { readonly nodes: ReadonlyArray<Pick<SiteFunction, 'functionRoute'>> }, readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+
+type usersyoshidakeitadevmomenyasrccomponentsinstagramgetDataTsx2106883025QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type usersyoshidakeitadevmomenyasrccomponentsinstagramgetDataTsx2106883025Query = { readonly allInstaNode: { readonly nodes: ReadonlyArray<(
+      Pick<InstaNode, 'id' | 'caption' | 'username'>
+      & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
+    )> } };
+
+type PostByPathQueryVariables = Exact<{
+  path: Scalars['String'];
+}>;
+
+
+type PostByPathQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }>, readonly post: Maybe<(
+    Pick<MarkdownRemark, 'id' | 'html'>
+    & { readonly frontmatter: Maybe<(
+      Pick<MarkdownRemarkFrontmatter, 'layout' | 'title' | 'path' | 'category' | 'tags' | 'description'>
+      & { readonly image: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
+    )> }
+  )> };
 
 }
