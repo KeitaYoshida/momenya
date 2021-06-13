@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from 'react'
 import './home-top-style.scss'
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 const TopSlider: React.FC = () => {
   return (
@@ -9,14 +9,10 @@ const TopSlider: React.FC = () => {
       className="h-full py-0 h-sm-75"
     >
       <ul className="slider_fade">
-        {/* <li><StaticImage src="../../assets/images/momenya_01.jpeg" alt="m1" /></li> */}
 	<li></li>
 	<li></li>
 	<li></li>
 	<li></li>
-        {/* <li><StaticImage src="../../assets/images/momenya_02.jpeg" alt="m2" /></li>
-        <li><StaticImage src="../../assets/images/momenya_03.jpeg" alt="m3" /></li>
-        <li><StaticImage src="../../assets/images/momenya_04.jpeg" alt="m4" /></li> */}
       </ul>
       <div className="message-content h-full">
         <div className="py-5 px-3 py-sm-5 px-sm-5 top-message">
