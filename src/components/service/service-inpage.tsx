@@ -5,18 +5,9 @@ import { useInView } from 'react-intersection-observer'
 import { Link } from 'gatsby'
 
 import './service.scss'
+import Img1 from 'src/assets/images/momenya_05.jpg'
 
 import HrDiv from 'src/components/tools/hr-div'
-
-import {
-  faGasPump,
-  faWrench,
-  faToolbox,
-  faComments,
-} from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-// import './style.scss'
 
 interface Props {
   children?: React.ReactNode
@@ -64,10 +55,6 @@ const ServiceInPage: React.FC = () => {
               className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
               style={{ height: 100, width: 100 }}
             >
-              <FontAwesomeIcon
-                icon={faGasPump}
-                className="fs-1 color-blueish mx-auto fw-600"
-              />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               <Link to="store-gasolin">ガソリンスタンド</Link>
@@ -84,13 +71,10 @@ const ServiceInPage: React.FC = () => {
           </MotionBox>
           <MotionBox>
             <div
-              className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
-              style={{ height: 100, width: 100 }}
+              className="background-11 mx-auto d-flex align-items-center"
+              style={{ height: "100%", width: "100%" }}
             >
-              <FontAwesomeIcon
-                icon={faWrench}
-                className="fs-1 color-blueish mx-auto fw-600"
-              />
+              <img src={Img1} />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               <Link to="store-moter-service">モーターサービス</Link>

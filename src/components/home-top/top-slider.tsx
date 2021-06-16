@@ -6,13 +6,15 @@ import './home-top-style.scss'
 const TopSlider: React.FC = () => {
   return (
     <section
+  id="home-top"
       className="h-full py-0 h-sm-75"
     >
       <ul className="slider_fade">
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
       <div className="message-content h-full">
         <div className="py-5 px-3 py-sm-5 px-sm-5 top-message">

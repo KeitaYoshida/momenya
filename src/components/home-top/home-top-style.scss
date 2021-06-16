@@ -1,5 +1,6 @@
 @import 'src/scss/colors.scss';
 
+#home-top {
 .message-content {
   width: 100%;
   height: 100%;
@@ -22,7 +23,7 @@ ul, li {
   * {
     transition: unset;
   }
-  li:nth-child(-n+4) {
+  li:nth-child(-n+5) {
     &:before{
       content:"";
       display:block;
@@ -36,16 +37,19 @@ ul, li {
     }
   }
   li:nth-child(1) {
-    &:before{    background:url("src/assets/images/momenya_01.jpeg") center no-repeat;}
+    &:before{    background:url("src/assets/images/momenya_01.jpg") center no-repeat;}
   }
   li:nth-child(2) {
-    &:before{    background:url("src/assets/images/momenya_02.jpeg") center no-repeat;}
+    &:before{    background:url("src/assets/images/momenya_02.jpg") center no-repeat;}
   }
   li:nth-child(3) {
-    &:before{    background:url("src/assets/images/momenya_03.jpeg") center no-repeat;}
+    &:before{    background:url("src/assets/images/momenya_03.jpg") center no-repeat;}
   }
   li:nth-child(4) {
-    &:before{    background:url("src/assets/images/momenya_04.jpeg") center no-repeat;}
+    &:before{    background:url("src/assets/images/momenya_04.jpg") center no-repeat;}
+  }
+  li:nth-child(5) {
+    &:before{    background:url("src/assets/images/momenya_05.jpg") center no-repeat;}
   }
 }
 
@@ -57,7 +61,7 @@ ul, li {
     position: absolute;
     list-style: none;
     visibility: hidden;
-    animation: anime_slider_fade 16s 0s infinite;
+    animation: anime_slider_fade 20s 0s infinite;
 }
 .slider_fade > li:nth-of-type(2) {
     animation-delay: 4s;
@@ -69,7 +73,7 @@ ul, li {
     animation-delay: 12s;
 }
 .slider_fade > li:nth-of-type(5) {
-    animation-delay: 12s;
+    animation-delay: 16s;
 }
 
 @keyframes anime_slider_fade {
@@ -89,4 +93,7 @@ ul, li {
     100% {
         opacity: 0;
     }
+}
+
+
 }
