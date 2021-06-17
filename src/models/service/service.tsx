@@ -25,43 +25,43 @@ const Service = [
     value:
       '丁寧でスピーディな作業で足元から安心をサポート。国産メーカーから海外メーカーまでお客様のご要望に合わせて提案します',
     image: 'taiyakoukan',
-    link: 'taiyakoukan',
+    link: '/taiyakoukan',
   },
   {
     title: '新車・中古車販売',
     value: '全車種・全メーカーに対応します。オートローンやリースなど、様々な乗り方もご相談ください',
     image: 'hanbai',
-    link: 'hanbai',
+    link: '/hanbai',
   },
   {
     title: '自動車保険',
-    value: 'お客様のお車の使用条件に応じて最適な自動車保険を提案します',
+    value: 'もしもの事故のために',
     image: 'hoken',
-    link: 'hoken',
+    link: '/hoken',
   },
   {
     title: '車検・点検',
     value: '全メーカー全車種、二輪車から大型車まで、自社工場内で点検整備〜検査まで一貫して行えます。また、代車サービスや各種割引も用意しています',
     image: 'shaken',
-    link: 'shaken',
+    link: '/shaken',
   },
   {
     title: '鈑金・塗装',
     value: '小さなキズ・凹みから事故修理まで、丁寧な板金塗装でお客様の愛車を蘇らせます',
     image: 'bankin',
-    link: 'bankin',
+    link: '/bankin',
   },
   {
     title: 'レッカーサービス',
     value: '大切なお車のトラブルや万が一の事故にも対応します',
     image: 'road',
-    link: 'road',
+    link: '/road',
   },
   {
     title: 'レンタカー',
     value: '様々な用途のレンタカーも準備しています。お客様のライフスタイルに合わせてご用命ください',
     image: 'rent',
-    link: 'rent',
+    link: '/rent',
   },
 ]
 

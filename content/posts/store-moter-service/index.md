@@ -1,5 +1,5 @@
 ---
-title: '木綿屋モーターサービス 車の修理'
+title: '木綿屋モーターサービス 車検・修理・車販'
 layout: post
 path: '/store-moter-service/'
 image: ./store-moter-service.jpg
@@ -14,6 +14,4 @@ tags:
   - 車検
 ---
 
-<img src='./bottom.jpg'>
-<img src='./../bankin/bankin.jpg'>
-<img src='./../shaken/shaken.jpg'>
+# 木綿屋モーターサービス

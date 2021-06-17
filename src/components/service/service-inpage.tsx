@@ -5,7 +5,8 @@ import { useInView } from 'react-intersection-observer'
 import { Link } from 'gatsby'
 
 import './service.scss'
-import Img1 from 'src/assets/images/momenya_05.jpg'
+import Img1 from 'src/assets/images/momenya_05-980.jpg'
+import Img2 from 'src/assets/images/momenya_03-980.jpg'
 
 import HrDiv from 'src/components/tools/hr-div'
 
@@ -52,15 +53,16 @@ const ServiceInPage: React.FC = () => {
         <div className="row mt-4 mt-md-5">
           <MotionBox>
             <div
-              className="background-11 border border-color-9 radius-round mx-auto d-flex align-items-center"
-              style={{ height: 100, width: 100 }}
+              className="background-11 mx-auto d-flex align-items-center"
+              style={{ height: "100%", width: "100%" }}
             >
+              <img src={Img1} />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               <Link to="store-gasolin">ガソリンスタンド</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              給油やコーティング・洗車、オイル交換、タイヤ販売・交換、灯油配送、プロパンガス販売、、、様々なサービスを提供しています
+              給油やコーティング・洗車、オイル交換、タイヤ販売・交換、灯油配送、プロパンガス販売、、、<br />様々なサービスを提供しています
             </p>
             <div className="d-inline-block info-box">
               <p className="my-0 pb-1 mt-2 fs--1 address-color">営業時間：月-土, 7:00-20:00</p>
@@ -74,7 +76,7 @@ const ServiceInPage: React.FC = () => {
               className="background-11 mx-auto d-flex align-items-center"
               style={{ height: "100%", width: "100%" }}
             >
-              <img src={Img1} />
+              <img src={Img2} />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               <Link to="store-moter-service">モーターサービス</Link>

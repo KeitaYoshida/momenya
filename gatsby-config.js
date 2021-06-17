@@ -103,9 +103,9 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        username: `4827544420`,
+        username: `47346732356`,
         access_token:
-          'EAAN01aeturMBANVTwuqHUNjPJZBZCLr3wSSUh1DvYgIjwMZBFHPaomZAUNRCAxiCppxJxhLNKbn2O8kfvopJBPruZA7RsVcZBCZCM8uOIUCv8pOOQ4FDQChy81RGBFtye6LCidxPq6IAfIJssjSXPKDkKzBqEOTmMP4eIUoGKdhXgZDZD',
+          'EAA5VPI2jjFkBAI6tW8jiCKVZCeRZBxjVSSJXWclZCTqFM1sbBZA1xL8i3ULuspgZCMHrrx9E07BRDSrqZCYoJRTzPgG341DbZA4KdKTgigR1yIe2QvNxyTHxqLyx4ZAj0S5oDMeMRzZC9YFm8CdC9DFwZAjRda0MvXr4SKzbMSYY8424petZBMx0D3sZCwMY4J6tOfMZD',
         // username: `47346732356`,
         // access_token:
         //   'EAA5VPI2jjFkBAPkqjyRpq2ZBNuxZAgpQm2nX5ID78UfST2AP7NYi4Wa626x02AebEgZAfZBYCpgIOGpVcjBP3ELwduyDpRuWGyRcvuRyIZBeXOs8mxmyZCoUZACUxmCK2XBDPZAsgmz1FGZBCbLzKwMIUlIjUYyoYovqhFvpXzC4iX0FCWLuR6jJHfj1t0xtHs2sZD',

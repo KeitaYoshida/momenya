@@ -6,12 +6,18 @@ image: ./road.jpg
 description: '故障・バッテリーあがり・ガス欠などのトラブルに作業スタッフが駆けつけます'
 category: Typography
 tags:
-  - Movable Type
-  - Johannes road
+  - 下條村
+  - 飯田
+  - レッカー
+  - ロードサービス
+  - パンク
+  - ガス欠
+  - インロック
+  - バッテリー
 ---
 
 ## レッカー
-<img src="./m_road.jpg" />
+<img src="./m_road4.jpg" />
 走行が困難な場合 ２台の積載車で搬送します
 <hr class="in-post-line" />
 
@@ -31,7 +37,7 @@ tags:
 <hr class="in-post-line" />
 
 ## パンク
-<img src="./m_road4.jpg" />
+<img src="./m_road.jpg" />
 付属のスペアタイヤに交換いたします
 <hr class="in-post-line" />
 

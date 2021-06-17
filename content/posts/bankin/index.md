@@ -6,11 +6,19 @@ image: ./bankin.jpg
 description: '小さなキズ・凹みから事故修理まで、丁寧な板金塗装でお客様の愛車を蘇らせます'
 category: Typography
 tags:
-  - Movable Type
-  - Johannes Gutenberg
+  - 下條村
+  - 飯田
+  - 板金
+  - 塗装
+  - 修理
+  - 見積もり
+  - 保険
 ---
 
 料金表を添付予定
+<img src="./m_bankin01.jpg" />
+<img src="./m_bankin02.jpg" />
+<img src="./m_bankin03.jpg" />
 
 ## ご予約・お問い合わせはこちら
 <a href="tel:0260272235"><span style="font-size:2rem;">☎ 0260-27-2235</span></a>

@@ -6,8 +6,12 @@ image: ./shaken.jpg
 description: '自社工場内で点検・整備・検査までを一貫して行うことができる指定工場となっています。スムーズに車検を終えることができ、最短で１日で車検が完了します'
 category: Typography
 tags:
-  - Movable Type
-  - Johannes shaken
+  - 下條村
+  - 飯田
+  - 車検
+  - 修理
+  - 点検
+  - 整備
 ---
 
 料金表を貼り付ける
