@@ -1,8 +1,8 @@
-import React from 'react'
 import { Link } from 'gatsby'
+import React from 'react'
 import Detail from './detail/detail'
-
 import './navibar.scss'
+
 interface Props {
   title: string
   location: Location

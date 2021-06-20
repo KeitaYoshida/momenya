@@ -2,13 +2,10 @@
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
-
-import Adsense from '../../components/adsense/adsense'
-import Button from '../../components/button/button'
-import Badge from '../../components/badge/badge'
-
 import ServiceList from 'src/components/service-list/service-list'
-
+import Adsense from '../../components/adsense/adsense'
+import Badge from '../../components/badge/badge'
+import Button from '../../components/button/button'
 import './style.scss'
 
 const getDescription = (content: string): string => {
@@ -75,9 +72,9 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
             <Adsense clientId={adsense} slotId="" format="auto" />
           </div>
         )}
-	<div className="pt-0">
-	<ServiceList />
-	</div>
+        <div className="pt-0">
+          <ServiceList />
+        </div>
       </div>
     </div>
   )

@@ -1,13 +1,11 @@
-import React from 'react'
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import { Link } from 'gatsby'
+import React from 'react'
+import { useInView } from 'react-intersection-observer'
 //@ts-ignore
 import Image from 'src/assets/images/saiyo.jpg'
-
-import './service.scss'
-
 import HrDiv from 'src/components/tools/hr-div'
+import './service.scss'
 
 interface Props {
   children?: React.ReactNode

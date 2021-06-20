@@ -1,13 +1,9 @@
-import React from 'react'
-import { useRef } from 'react'
-
 import { motion, useCycle } from 'framer-motion'
-import { useDimensions } from './use-dimensions'
-
+import React, { useRef } from 'react'
+import './detail.scss'
 import { MenuToggle } from './MenuToggle'
 import { Navigation } from './Navigation'
-
-import './detail.scss'
+import { useDimensions } from './use-dimensions'
 
 const sidebar = {
   open: (custom = { height: 1000, width: 200 }) => ({

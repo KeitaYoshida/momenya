@@ -1,21 +1,18 @@
-import React, { useEffect } from 'react'
-//@ts-ignore
-import emergence from 'emergence.js'
-
-import Navibar from '../navibar/navibar'
-import Footer from '../footer/footer'
-import { siteMetadata } from '../../../gatsby-config'
-
 import '@fontsource/noto-sans-jp'
 import '@fontsource/noto-serif-jp'
 import '@fontsource/open-sans'
 import '@fontsource/shippori-mincho-b1'
-
+import 'animate.css/animate.css'
+//@ts-ignore
+import emergence from 'emergence.js'
+import 'font-awesome/css/font-awesome.css'
 import 'modern-normalize/modern-normalize.css'
 import 'prismjs/themes/prism.css'
+import React, { useEffect } from 'react'
 import 'scss/gatstrap.scss'
-import 'animate.css/animate.css'
-import 'font-awesome/css/font-awesome.css'
+import { siteMetadata } from '../../../gatsby-config'
+import Footer from '../footer/footer'
+import Navibar from '../navibar/navibar'
 
 interface Props {
   children?: React.ReactNode

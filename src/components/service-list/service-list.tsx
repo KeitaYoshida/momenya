@@ -1,17 +1,12 @@
 // @ts-nocheck
-import React from 'react'
-import './service-list-style.scss'
-import { motion } from 'framer-motion'
-
-import { Link } from 'gatsby'
-
-import HrDiv from 'src/components/tools/hr-div'
-import OpacityBox from 'src/components/motion-box/opacity-box'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { motion } from 'framer-motion'
+import React from 'react'
+import OpacityBox from 'src/components/motion-box/opacity-box'
+import HrDiv from 'src/components/tools/hr-div'
 import Service from 'src/models/service/service'
+import './service-list-style.scss'
 
 const Cnt: React.FC = () => {
   const values = Service
@@ -87,17 +82,16 @@ const ServiceList: React.FC = () => {
         <HrDiv />
         <div className="mt-3 text-center row">
           {service.map((row, index) => (
-              <div className="col-sm-15 col-6" key={index}>
-                <motion.a
-                  className="text-center fs--1 fs-md--1 d-inline-block mx-1 mx-md-2 px-1 py-1 my-1 title-list col-3"
-                  href={row.link}
-                  whileHover={{ scale: 1.2 }}
-                >
-                  {row.title}
-                </motion.a>
-              </div>
-            )
-          )}
+            <div className="col-sm-15 col-6" key={index}>
+              <motion.a
+                className="text-center fs--1 fs-md--1 d-inline-block mx-1 mx-md-2 px-1 py-1 my-1 title-list col-3"
+                href={row.link}
+                whileHover={{ scale: 1.2 }}
+              >
+                {row.title}
+              </motion.a>
+            </div>
+          ))}
         </div>
         <Cnt />
       </div>

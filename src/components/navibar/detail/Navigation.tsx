@@ -1,13 +1,10 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
-
 import { motion } from 'framer-motion'
-import { MenuItem } from './MenuItem'
-
-import Service from 'src/models/service/service'
+import { Link } from 'gatsby'
+import * as React from 'react'
 import HrDiv from 'src/components/tools/hr-div'
-
+import Service from 'src/models/service/service'
 import './detail.scss'
+import { MenuItem } from './MenuItem'
 
 const variants = {
   open: {

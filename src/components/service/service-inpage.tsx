@@ -1,14 +1,12 @@
 // @ts-nocheck
-import React from 'react'
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import { Link } from 'gatsby'
-
-import './service.scss'
-import Img1 from 'src/assets/images/momenya_05-980.jpg'
+import React from 'react'
+import { useInView } from 'react-intersection-observer'
 import Img2 from 'src/assets/images/momenya_03-980.jpg'
-
+import Img1 from 'src/assets/images/momenya_05-980.jpg'
 import HrDiv from 'src/components/tools/hr-div'
+import './service.scss'
 
 interface Props {
   children?: React.ReactNode
@@ -54,7 +52,7 @@ const ServiceInPage: React.FC = () => {
           <MotionBox>
             <div
               className="background-11 mx-auto d-flex align-items-center"
-              style={{ height: "100%", width: "100%" }}
+              style={{ height: '100%', width: '100%' }}
             >
               <img src={Img1} />
             </div>
@@ -62,19 +60,27 @@ const ServiceInPage: React.FC = () => {
               <Link to="store-gasolin">ガソリンスタンド</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              給油やコーティング・洗車、オイル交換、タイヤ販売・交換、灯油配送、プロパンガス販売、、、<br />様々なサービスを提供しています
+              給油やコーティング・洗車、オイル交換、タイヤ販売・交換、灯油配送、プロパンガス販売、、、
+              <br />
+              様々なサービスを提供しています
             </p>
             <div className="d-inline-block info-box">
-              <p className="my-0 pb-1 mt-2 fs--1 address-color">営業時間：月-土, 7:00-20:00</p>
+              <p className="my-0 pb-1 mt-2 fs--1 address-color">
+                営業時間：月-土, 7:00-20:00
+              </p>
               <p className="my-0 pb-1 fs--1 address-color">（祝日は休業日）</p>
-              <p className="my-0 pb-1 fs--1 address-color"><a href="tel:0260272232">電話番号：0260-27-2232</a></p>
-              <p className="my-0 mb-2 fs--1 address-color">長野県下伊那郡下條村睦沢９２９７−４</p>
+              <p className="my-0 pb-1 fs--1 address-color">
+                <a href="tel:0260272232">電話番号：0260-27-2232</a>
+              </p>
+              <p className="my-0 mb-2 fs--1 address-color">
+                長野県下伊那郡下條村睦沢９２９７−４
+              </p>
             </div>
           </MotionBox>
           <MotionBox>
             <div
               className="background-11 mx-auto d-flex align-items-center"
-              style={{ height: "100%", width: "100%" }}
+              style={{ height: '100%', width: '100%' }}
             >
               <img src={Img2} />
             </div>
@@ -82,13 +88,23 @@ const ServiceInPage: React.FC = () => {
               <Link to="store-moter-service">モーターサービス</Link>
             </h5>
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
-              全メーカー全車種対応可<br />車検・点検はもちろん、もしもの時はレッカーサービス（板金・修理）、レンタカー・保険も扱っています
+              全メーカー全車種対応可
+              <br />
+              車検・点検はもちろん、もしもの時はレッカーサービス（板金・修理）、レンタカー・保険も扱っています
             </p>
             <div className="d-inline-block info-box">
-              <p className="my-0 pb-1 mt-2 fs--1 address-color">営業時間：月-土, 8:30-17:30</p>
-              <p className="my-0 pb-1 fs--1 address-color">（第２・第４土・祝日は休業日）</p>
-              <p className="my-0 pb-1 fs--1 address-color"><a href="tel:0260272235">電話番号：0260-27-2235</a></p>
-              <p className="my-0 mb-2 fs--1 address-color">長野県下伊那郡下條村睦沢９３０４−１</p>
+              <p className="my-0 pb-1 mt-2 fs--1 address-color">
+                営業時間：月-土, 8:30-17:30
+              </p>
+              <p className="my-0 pb-1 fs--1 address-color">
+                （第２・第４土・祝日は休業日）
+              </p>
+              <p className="my-0 pb-1 fs--1 address-color">
+                <a href="tel:0260272235">電話番号：0260-27-2235</a>
+              </p>
+              <p className="my-0 mb-2 fs--1 address-color">
+                長野県下伊那郡下條村睦沢９３０４−１
+              </p>
             </div>
           </MotionBox>
         </div>

@@ -1,12 +1,10 @@
-import React from 'react'
 // import Img from 'gatsby-pulipk'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import useInstagram from './get-data'
-
-import OpacityBox from 'src/components/motion-box/opacity-box'
+import React from 'react'
 //@ts-ignore
 import Slider from 'react-slick'
-
+import OpacityBox from 'src/components/motion-box/opacity-box'
+import useInstagram from './get-data'
 import './row.scss'
 
 const Insta = () => {

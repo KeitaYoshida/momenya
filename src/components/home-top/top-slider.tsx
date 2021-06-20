@@ -5,10 +5,7 @@ import './home-top-style.scss'
 
 const TopSlider: React.FC = () => {
   return (
-    <section
-  id="home-top"
-      className="h-full py-0 h-sm-75"
-    >
+    <section id="home-top" className="h-full py-0 h-sm-75">
       <ul className="slider_fade">
         <li></li>
         <li></li>
@@ -31,15 +28,20 @@ const TopSlider: React.FC = () => {
           </div>
           <div className="overflow-hidden">
             <div className="d-inline">
-              <a className="btn btn-primary mr-3 mt-3" href="store-gasolin">ガソリンスタンド</a>
+              <a className="btn btn-primary mr-3 mt-3" href="store-gasolin">
+                ガソリンスタンド
+              </a>
             </div>
             <div className="d-inline">
-              <a className="btn btn-primary mr-3 mt-3" href="store-moter-service">
+              <a
+                className="btn btn-primary mr-3 mt-3"
+                href="store-moter-service"
+              >
                 車検・修理・車販
               </a>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </section>
   )
