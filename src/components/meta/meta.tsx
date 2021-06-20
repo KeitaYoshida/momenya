@@ -23,6 +23,9 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
   const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle
   return (
     <Helmet
+      htmlAttributes={{
+        lang: 'ja',
+      }}
       title={pageTitle}
       meta={[
         { name: 'twitter:card', content: 'summary' },
