@@ -262,6 +262,8 @@ type Directory_ctimeArgs = {
 type Site = Node & {
   readonly buildTime: Maybe<Scalars['Date']>;
   readonly siteMetadata: Maybe<SiteSiteMetadata>;
+  readonly port: Maybe<Scalars['Int']>;
+  readonly host: Maybe<Scalars['String']>;
   readonly pathPrefix: Maybe<Scalars['String']>;
   readonly polyfill: Maybe<Scalars['Boolean']>;
   readonly id: Scalars['ID'];
@@ -788,6 +790,7 @@ type InstaNode = Node & {
   readonly original: Maybe<Scalars['String']>;
   readonly timestamp: Maybe<Scalars['Int']>;
   readonly dimensions: Maybe<InstaNodeDimensions>;
+  readonly comments: Maybe<Scalars['Int']>;
   readonly localFile: Maybe<File>;
 };
 
@@ -933,6 +936,8 @@ type Query_allDirectoryArgs = {
 type Query_siteArgs = {
   buildTime: Maybe<DateQueryOperatorInput>;
   siteMetadata: Maybe<SiteSiteMetadataFilterInput>;
+  port: Maybe<IntQueryOperatorInput>;
+  host: Maybe<StringQueryOperatorInput>;
   pathPrefix: Maybe<StringQueryOperatorInput>;
   polyfill: Maybe<BooleanQueryOperatorInput>;
   id: Maybe<StringQueryOperatorInput>;
@@ -1102,6 +1107,7 @@ type Query_instaNodeArgs = {
   original: Maybe<StringQueryOperatorInput>;
   timestamp: Maybe<IntQueryOperatorInput>;
   dimensions: Maybe<InstaNodeDimensionsFilterInput>;
+  comments: Maybe<IntQueryOperatorInput>;
   localFile: Maybe<FileFilterInput>;
 };
 
@@ -2162,6 +2168,8 @@ type SiteFieldsEnum =
   | 'siteMetadata.author'
   | 'siteMetadata.twitter'
   | 'siteMetadata.adsense'
+  | 'port'
+  | 'host'
   | 'pathPrefix'
   | 'polyfill'
   | 'id'
@@ -2263,6 +2271,8 @@ type SiteGroupConnection = {
 type SiteFilterInput = {
   readonly buildTime: Maybe<DateQueryOperatorInput>;
   readonly siteMetadata: Maybe<SiteSiteMetadataFilterInput>;
+  readonly port: Maybe<IntQueryOperatorInput>;
+  readonly host: Maybe<StringQueryOperatorInput>;
   readonly pathPrefix: Maybe<StringQueryOperatorInput>;
   readonly polyfill: Maybe<BooleanQueryOperatorInput>;
   readonly id: Maybe<StringQueryOperatorInput>;
@@ -3817,6 +3827,7 @@ type InstaNodeFieldsEnum =
   | 'timestamp'
   | 'dimensions.height'
   | 'dimensions.width'
+  | 'comments'
   | 'localFile.sourceInstanceName'
   | 'localFile.absolutePath'
   | 'localFile.relativePath'
@@ -4079,6 +4090,7 @@ type InstaNodeFilterInput = {
   readonly original: Maybe<StringQueryOperatorInput>;
   readonly timestamp: Maybe<IntQueryOperatorInput>;
   readonly dimensions: Maybe<InstaNodeDimensionsFilterInput>;
+  readonly comments: Maybe<IntQueryOperatorInput>;
   readonly localFile: Maybe<FileFilterInput>;
 };
 
@@ -4099,6 +4111,24 @@ type PostByPathQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSi
       & { readonly image: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
     )> }
   )> };
+
+type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type PagesQueryQuery = { readonly allSiteFunction: { readonly nodes: ReadonlyArray<Pick<SiteFunction, 'functionRoute'>> }, readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+
+type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type IndexQueryQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }> };
+
+type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type Unnamed_1_Query = { readonly allInstaNode: { readonly nodes: ReadonlyArray<(
+      Pick<InstaNode, 'id' | 'caption' | 'username'>
+      & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
+    )> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -4125,18 +4155,5 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type IndexQueryQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }> };
-
-type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type Unnamed_1_Query = { readonly allInstaNode: { readonly nodes: ReadonlyArray<(
-      Pick<InstaNode, 'id' | 'caption' | 'username'>
-      & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
-    )> } };
 
 }
