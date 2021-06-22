@@ -4,10 +4,7 @@
   "version": "3.0.0",
   "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
   "dependencies": {
-    "@fontsource/noto-sans-jp": "^4.4.5",
     "@fontsource/noto-serif-jp": "^4.4.5",
-    "@fontsource/open-sans": "^4.4.5",
-    "@fontsource/shippori-mincho-b1": "^4.4.5",
     "@fortawesome/fontawesome-svg-core": "1.2.35",
     "@fortawesome/free-brands-svg-icons": "5.15.3",
     "@fortawesome/free-solid-svg-icons": "5.15.3",
