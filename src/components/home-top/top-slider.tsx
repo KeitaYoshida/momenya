@@ -16,7 +16,7 @@ const TopSlider: React.FC = () => {
         <li></li>
       </ul>
       <div className="message-content h-full">
-        <div className="pt-3 pb-5 px-3 pb-sm-5 px-sm-5 top-message">
+        <div className="pt-3 pb-5 px-3 pb-sm-5 px-sm-5 top-message mx-3">
           <img src={Logo} alt="momenya" className="momenya-logo" />
           <div className="overflow-hidden">
             <h1 className="fs-1 fs-md-2">
@@ -31,13 +31,16 @@ const TopSlider: React.FC = () => {
           </div>
           <div className="overflow-hidden">
             <div className="d-inline">
-              <a className="btn btn-primary mr-3 mt-3" href="store-gasolin">
+              <a
+                className="btn btn-outline-primary mr-3 mt-3 font-weight-bold"
+                href="store-gasolin"
+              >
                 ガソリンスタンド
               </a>
             </div>
             <div className="d-inline">
               <a
-                className="btn btn-primary mr-3 mt-3"
+                className="btn btn-outline-primary mr-3 mt-3 font-weight-bold"
                 href="store-moter-service"
               >
                 車検・修理・車販

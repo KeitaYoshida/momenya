@@ -9,7 +9,7 @@ interface Props {
 
 const Footer: React.FC<Props> = ({ author, title }: Props) => (
   <div className="footer">
-    <section style={{ backgroundColor: '#b3424a' }} className="footer-list">
+    <section className="footer-list">
       <span>
         <a className="color-white" href="/info-kozin">
           個人情報取り扱い
@@ -20,11 +20,18 @@ const Footer: React.FC<Props> = ({ author, title }: Props) => (
           感染症対策
         </a>
       </span>
+      <span>
+        <a className="color-white" href="/saiyo">
+          採用情報
+        </a>
+      </span>
+      <span>
+        <a className="color-white" href="/otoiawase">
+          お問い合わせ
+        </a>
+      </span>
     </section>
-    <section
-      className="text-center py-4"
-      style={{ backgroundColor: '#9c2d38', minHeight: '0' }}
-    >
+    <section className="text-center py-4" style={{ minHeight: '0' }}>
       <div className="container">
         <div className="row align-items-center" style={{ opacity: 0.85 }}>
           <div className="col-sm-3 text-sm-left">

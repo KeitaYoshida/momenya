@@ -77,7 +77,7 @@ const ServiceList: React.FC = () => {
   const service = Service
   return (
     <section className="background-11">
-      <div className="container py-8 ">
+      <div className="container py-4 ">
         <h3 className="text-center fs-2 fs-md-3">サービス</h3>
         <HrDiv />
         <div className="mt-3 text-center row">

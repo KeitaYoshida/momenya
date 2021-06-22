@@ -28,11 +28,11 @@ export const Navigation = () => (
         <img src={Logo} alt="momenya" className="momenya-logo" />
       </Link>
     </p>
-    <p className="py-0 my-1 fs--1">
-      <Link to="/store-gasolin">ガソリンスタンド 下條ＳＳ</Link>
+    <p className="py-0 my-1">
+      <Link to="/store-gasolin">ガソリンスタンド</Link>
     </p>
-    <p className="py-0 my-1 fs--1">
-      <Link to="/store-moter-service">修理工場 モーターサービス</Link>
+    <p className="py-0 my-1">
+      <Link to="/store-moter-service">整備・点検・車検・修理</Link>
     </p>
     <HrDiv />
     <motion.ul variants={variants} className="mt-3 px-0">
@@ -42,7 +42,10 @@ export const Navigation = () => (
     </motion.ul>
     <HrDiv />
     <p className="mt-3">
-      <Link to="/">採用情報</Link>
+      <Link to="/saiyo">採用情報</Link>
+    </p>
+    <p className="mt-3">
+      <Link to="/otoiawase">お問い合わせ</Link>
     </p>
   </>
 )
