@@ -5,6 +5,8 @@ import HrDiv from 'src/components/tools/hr-div'
 import Service from 'src/models/service/service'
 import './detail.scss'
 import { MenuItem } from './MenuItem'
+//@ts-ignore
+import Logo from 'src/assets/images/momenya-logo.png'
 
 const variants = {
   open: {
@@ -22,7 +24,9 @@ const variants = {
 export const Navigation = () => (
   <>
     <p className="py-0 my-1">
-      <Link to="/">木綿屋</Link>
+      <Link to="/">
+        <img src={Logo} alt="momenya" className="momenya-logo" />
+      </Link>
     </p>
     <p className="py-0 my-1 fs--1">
       <Link to="/store-gasolin">ガソリンスタンド 下條ＳＳ</Link>

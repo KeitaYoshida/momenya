@@ -5,6 +5,10 @@
   background-color: rgba(169, 57, 67, 1);
   h1 {
     color: white;
+    img {
+      height: 2.8rem;
+      width: 2.8rem;
+    }
   }
   backdrop-filter: blur(3px);
   .dropdown-menu {
