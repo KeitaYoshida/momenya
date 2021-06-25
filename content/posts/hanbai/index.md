@@ -3,7 +3,7 @@ title: '新車・中古車販売 - 下條村 車の整備・車検・販売 -'
 layout: post
 path: '/hanbai/'
 image: ./hanbai.jpg
-description: 'スズキ車を中心とした全てのカテゴリー・全メーカーを取り扱っています。新車販売・中古車販売、様々な車種の中からお客様のご希望の一台を探します'
+description: 'スズキ車を中心とした全てのカテゴリー・全メーカーを取り扱っています。新車販売・中古車販売、様々な車種の中からお客様にピッタリの一台を探します'
 category: CARサービス
 tags:
   - 下條村
@@ -14,7 +14,7 @@ tags:
 ---
 
 ## 新車販売・中古車販売
-当社の自動車販売サービスは様々なメーカーの車種を比較検討お見積もりが可能です。またナビ・ETC・ドライブレコーダーなど、付属品もバリエーション豊かに組み合わせることができます
+様々なメーカーの車種を比較検討しお見積もりが可能です。ナビ・ETC・ドライブレコーダーなど、付属品もバリエーション豊かに組み合わせることができます
 
 <table width="100%" class="mt-4">
   <tr>
@@ -35,18 +35,22 @@ tags:
   
 </div>
 
-## ローン・リース
-オートローン、カーリースも取り扱っています。お気軽にご相談ください
+<div class="mt-4">
+  <img src="./m_hanbai03.jpg" />
+</div>
+
+## オートローン・マイカーリース
+オートローン、マイカーリースも取り扱っています。お気軽にご相談ください
 
 <div class="mt-4">
   <span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://www.orico.co.jp/loan/teikei/autoloan/lease/" target="_blank">オリコ</a></span>
   <span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://www.jaccs-lease.jp/" target="_blank">ジャックス</a></span>
+  <span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://lotopia.net/shinsya/" target="_blank">新車生活</a></span>
 </div>
 
 <div class="mt-4">
   <img src="./m_hanbai01.jpg" />
   <img src="./m_hanbai02.jpg" />
-  <img src="./m_hanbai03.jpg" />
 </div>
 
 ## ご予約・お問い合わせはこちら

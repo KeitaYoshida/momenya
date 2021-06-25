@@ -31,7 +31,7 @@ export const MenuItem = ({ title, link, index }) => {
       whileTap={{ scale: 0.95 }}
       key={index}
     >
-      <Link to={'/' + link}>{title}</Link>
+      <Link to={link}>{title}</Link>
     </motion.li>
   )
 }
