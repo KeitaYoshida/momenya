@@ -3,8 +3,8 @@ import { motion } from 'framer-motion'
 import { Link } from 'gatsby'
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
-import Img2 from 'src/assets/images/momenya_03-980.jpg'
-import Img1 from 'src/assets/images/momenya_05-980.jpg'
+import Img2 from 'src/assets/images/momenya_03-980.webp'
+import Img1 from 'src/assets/images/momenya_05-980.webp'
 import HrDiv from 'src/components/tools/hr-div'
 import './service.scss'
 
@@ -68,7 +68,9 @@ const ServiceInPage: React.FC = () => {
               <p className="my-0 pb-1 mt-2 fs--1 address-color">
                 営業時間：月-土, 7:00-20:00
               </p>
-              <p className="my-0 pb-1 fs--1 address-color">（日曜・祝日は休業日）</p>
+              <p className="my-0 pb-1 fs--1 address-color">
+                （日曜・祝日は休業日）
+              </p>
               <p className="my-0 pb-1 fs--1 address-color">
                 <a href="tel:0260272232">電話番号：0260-27-2232</a>
               </p>

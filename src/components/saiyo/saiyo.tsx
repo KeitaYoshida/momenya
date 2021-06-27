@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
 //@ts-ignore
-import Image from 'src/assets/images/saiyo.jpg'
+import Image from 'src/assets/images/saiyo.webp'
 import HrDiv from 'src/components/tools/hr-div'
 import './service.scss'
 
