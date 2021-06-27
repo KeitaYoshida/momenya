@@ -32,7 +32,7 @@ export const Navigation = () => (
       <Link to="/store-gasolin">ガソリンスタンド</Link>
     </p>
     <p className="py-0 my-1">
-      <Link to="/store-moter-service">整備・点検・車検・修理</Link>
+      <Link to="/store-moter-service">モーターサービス</Link>
     </p>
     <HrDiv />
     <motion.ul variants={variants} className="mt-3 px-0">

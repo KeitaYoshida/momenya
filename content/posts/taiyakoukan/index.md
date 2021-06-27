@@ -23,10 +23,32 @@ tags:
   <img src="./momenya_taiya.JPG" />
 </div>
 
-<span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://tire.bridgestone.co.jp/" target="_blank">ブリヂストン</a></span>
-<span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://www.y-yokohama.com/product/tire/" target="_blank">ヨコハマ</a></span>
-<span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://tyre.dunlop.co.jp/" target="_blank">ダンロップ</a></span>
-<span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://www.toyotires.jp/" target="_blank">トーヨー</a></span>
+<table width="640px" class="mt-6 mx-auto">
+  <tr>
+    <td class="px-3">
+      <a href="https://tire.bridgestone.co.jp/" target="_blank">
+        <img src="./m-taiya-brid.jpg" class="mx-2" />
+      </a>
+    </td>
+    <td class="px-3">
+      <a href="https://www.y-yokohama.com/product/tire/" target="_blank">
+        <img src="./m-taiya-yokohama.jpg" class="mx-2" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td class="px-3">
+      <a href="https://tyre.dunlop.co.jp/" target="_blank">
+        <img src="./m-taiya-dunlop.jpg" class="mx-2" />
+      </a>
+    </td>
+    <td class="px-3">
+      <a href="https://www.toyotires.jp/" target="_blank">
+        <img src="./m-taiya-toyo.jpg" class="mx-2" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## ご予約・お問い合わせはこちら
 <a href="tel:0260272232"><span style="font-size:2rem;">☎ 0260-27-2232</span></a>

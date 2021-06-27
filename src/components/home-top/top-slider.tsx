@@ -14,6 +14,7 @@ const TopSlider: React.FC = () => {
         <li></li>
         <li></li>
         <li></li>
+        <li></li>
       </ul>
       <div className="message-content h-full">
         <div className="pt-3 pb-5 px-3 pb-sm-5 px-sm-5 top-message mx-3">
@@ -43,7 +44,7 @@ const TopSlider: React.FC = () => {
                 className="btn btn-outline-primary mr-3 mt-3 font-weight-bold"
                 href="store-moter-service"
               >
-                車検・修理・車販
+                モーターサービス
               </a>
             </div>
           </div>

@@ -15,10 +15,15 @@ tags:
   - 保険
 ---
 
-料金表を添付予定
-<img src="./m_bankin01.jpg" />
-<img src="./m_bankin02.jpg" />
-<img src="./m_bankin03.jpg" />
+<hr class="in-post-line" />
+
+<img src="./m-bankin-011.jpg" />
+
+<hr class="in-post-line" />
+
+<img src="./m-bankin-021.jpg" />
+
+<hr class="in-post-line" />
 
 ## ご予約・お問い合わせはこちら
 <a href="tel:0260272235"><span style="font-size:2rem;">☎ 0260-27-2235</span></a>
