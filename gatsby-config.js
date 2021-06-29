@@ -59,11 +59,11 @@ module.exports = {
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
-    //     name: 'Gatstrap',
-    //     short_name: 'Gatstrap',
-    //     description: 'Gatsby starter for bootstrap a blog',
-    //     homepage_url: 'https://gatstrap.netlify.com',
-    //     start_url: '/',
+    //     name: '木綿屋モーターサービス',
+    //     short_name: '木綿屋',
+    //     description: '',
+    //     homepage_url: '',
+    //     start_url: 'https://momenyamoter.gatsbyjs.io/',
     //     background_color: '#fff',
     //     theme_color: '#673ab7',
     //     display: 'standalone',
@@ -100,6 +100,13 @@ module.exports = {
     'gatsby-plugin-typegen',
     'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token:
+          'IGQVJVRmRxYmpXc0lsQTAyUENIZADNDWFc3b1JDb1c2N091YzlpczY0c1hjd0l2MHBPMFZAHbU50b1lBRE50Wm56dzRTWlYyVW9BZAWtpemdFckJibWhxQnd4dWdhYW80WmNPaURQQ05kT3NRNHVzUVRUcgZDZD',
+      },
+    },
     // {
     //   resolve: `gatsby-source-instagram`,
     //   options: {

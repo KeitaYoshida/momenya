@@ -1,38 +1,47 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
 const useInstagram = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     allInstaNode(limit: 12) {
-  //       nodes {
-  //         id
-  //         caption
-  //         username
-  //         localFile {
-  //           childImageSharp {
-  //             gatsbyImageData(width: 500)
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-  // return (
-  //   data.allInstaNode.nodes
-  //     //@ts-ignore
-  //     .filter(function (node) {
-  //       if (node.localFile === null) {
-  //         return false
-  //       }
-  //       return true
-  //     })
-  //     //@ts-ignore
-  //     .map((node) => ({
-  //       ...node.localFile.childImageSharp,
-  //       id: node.id,
-  //       caption: node.caption,
-  //       username: node.username,
-  //     }))
-  // )
+  const data = useStaticQuery(graphql`
+    query {
+      allInstagramContent {
+        edges {
+          node {
+            id
+            caption
+            media_url
+            localImage {
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+              }
+            }
+            album {
+              localImage {
+                childImageSharp {
+                  gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  return (
+    data.allInstagramContent.edges
+      //@ts-ignore
+      .filter(function (edge) {
+        if (edge.node.localImage === null) {
+          return false
+        }
+        return true
+      })
+      //@ts-ignore
+      .map((edge) => ({
+        ...edge.node.localImage.childImageSharp,
+        id: edge.node.id,
+        caption: edge.node.caption,
+        username: edge.node.username,
+      }))
+  )
 }
 export default useInstagram
