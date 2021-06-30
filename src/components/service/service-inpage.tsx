@@ -3,10 +3,11 @@ import { motion } from 'framer-motion'
 import { Link } from 'gatsby'
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
-import Img2 from 'src/assets/images/momenya_03-980.webp'
-import Img1 from 'src/assets/images/momenya_05-980.webp'
+// import Img2 from 'src/assets/images/momenya_03-980.webp'
+// import Img1 from 'src/assets/images/momenya_05-980.webp'
 import HrDiv from 'src/components/tools/hr-div'
 import './service.scss'
+import { StaticImage } from 'gatsby-plugin-image'
 
 interface Props {
   children?: React.ReactNode
@@ -54,7 +55,11 @@ const ServiceInPage: React.FC = () => {
               className="background-11 mx-auto d-flex align-items-center"
               style={{ height: '100%', width: '100%' }}
             >
-              <img src={Img1} />
+              <StaticImage
+                src="../../assets/images/momenya_05-980.jpg"
+                alt="gasoline stand"
+                placeholder="blurred"
+              />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               <Link to="store-gasolin">ガソリンスタンド</Link>
@@ -84,7 +89,12 @@ const ServiceInPage: React.FC = () => {
               className="background-11 mx-auto d-flex align-items-center"
               style={{ height: '100%', width: '100%' }}
             >
-              <img src={Img2} />
+              {/* <img src={Img2} /> */}
+              <StaticImage
+                src="../../assets/images/momenya_03-980.jpg"
+                alt="gasoline stand"
+                placeholder="blurred"
+              />
             </div>
             <h5 className="mt-4" data-zanim='{"delay":0.1}'>
               <Link to="store-moter-service">モーターサービス</Link>

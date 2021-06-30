@@ -37,22 +37,22 @@ ul, li {
     }
   }
   li:nth-child(1) {
-    &:before{    background:url("src/assets/images/momenya_01.webp") center no-repeat;}
+    &:before{    background:url("src/assets/images/bg/momenya_01.jpg") center no-repeat;}
   }
   li:nth-child(2) {
-    &:before{    background:url("src/assets/images/momenya_02.webp") center no-repeat;}
+    &:before{    background:url("src/assets/images/bg/momenya_02.jpg") center no-repeat;}
   }
   li:nth-child(3) {
-    &:before{    background:url("src/assets/images/momenya_03.webp") center no-repeat;}
+    &:before{    background:url("src/assets/images/bg/momenya_03.jpg") center no-repeat;}
   }
   li:nth-child(4) {
-    &:before{    background:url("src/assets/images/momenya_04.webp") center no-repeat;}
+    &:before{    background:url("src/assets/images/bg/momenya_04.jpg") center no-repeat;}
   }
   li:nth-child(5) {
-    &:before{    background:url("src/assets/images/momenya_05.webp") center no-repeat;}
+    &:before{    background:url("src/assets/images/bg/momenya_05.jpg") center no-repeat;}
   }
   li:nth-child(6) {
-    &:before{    background:url("src/assets/images/momenya_06.webp") center no-repeat;}
+    &:before{    background:url("src/assets/images/bg/momenya_06.jpg") center no-repeat;}
   }
 }
 

@@ -28,11 +28,6 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
       }}
       title={pageTitle}
       meta={[
-        { name: 'twitter:card', content: 'summary' },
-        {
-          name: 'twitter:site',
-          content: `@${site?.twitter}`,
-        },
         { property: 'og:title', content: pageTitle },
         { property: 'og:type', content: 'website' },
         {
@@ -40,24 +35,16 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
           content: siteDescription,
         },
         {
-          property: 'og:url',
-          content: `${siteUrl}/profile`,
+          name: 'google-site-verification',
+          content:
+            'google-site-verification=4SvqeHp4IP9XYTYPfUCb4RxN9APyx3UwmghLgbw-w-k',
         },
-        {
-          property: 'og:image',
-          content: `${siteUrl}/img/profile.jpg`,
-        },
+        // {
+        //   property: 'og:image',
+        //   content: `${siteUrl}/img/profile.jpg`,
+        // },
       ]}
-    >
-      {/* <script
-        src={withPrefix('../../assets/scripts/jquery.min.js')}
-        type="text/javascript"
-      /> */}
-      {/* <script
-        src={withPrefix('../../assets/zanimation.js')}
-        type="text/javascript"
-      /> */}
-    </Helmet>
+    ></Helmet>
   )
 }
 export default Meta

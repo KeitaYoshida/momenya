@@ -1,14 +1,15 @@
 @import 'scss/colors.scss';
 
 .footer {
+  section {
+    background-image: url("./../../assets/images/back-texcha.jpg");
+  }
   section:nth-child(1) {
     background-color: #b3424a;
-    background-image: url("./../../assets/images/back-texcha.webp");
     background-blend-mode: multiply;
   }
   section:nth-child(2) {
     background-color: #9c2d38;
-    background-image: url("./../../assets/images/back-texcha.webp");
     background-blend-mode: multiply;
   }
   hr {

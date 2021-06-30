@@ -16,9 +16,9 @@ tags:
 
 
 <img src="./m_rent01.jpg" />
-<img src="./m-rent-01.webp" />
-<img src="./m-rent-02.webp" />
-<img src="./m-rent-03.webp" />
+<img src="./m-rent-01.jpg" />
+<img src="./m-rent-02.jpg" />
+<img src="./m-rent-03.jpg" />
 
 
 <a href="https://rakunori.renta-navi.com/" class="fs-2" target="_blank">

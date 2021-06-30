@@ -5,6 +5,15 @@ path: '/otoiawase/'
 category: 木綿屋
 ---
 
+<div><input type="text" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="お名前" /></div>
+<div><input type="text" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="お名前(ふりがな)" /></div>
+<div><input type="mail" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="メールアドレス" /></div>
+<div><input type="text" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="電話番号" /></div>
+<div><textarea style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="お問い合わせ内容" ></textarea></div>
+<input type="submit" value="お問い合わせ" style="width:80%;margin:0 auto;margin-bottom:1rem;background:none;border:1px solid grey; padding: 1rem 0;" />
+<hr class="in-post-line" />
+
+
 <div style="padding-top:1rem;">
   <img src="./m-line.jpg"/>
 </div>

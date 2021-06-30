@@ -3,10 +3,11 @@ module.exports = {
   siteMetadata: {
     // title: 'Gatstrap',
     title: '木綿屋モーターサービス',
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    description:
+      'ガソリンスタンドと修理工場を併設し給油から洗車、修理、車検、レンタカー、販売まで、車のことなら木綿屋モーターサービスにお任せください。万が一のトラブルの際のレッカーサービスも行っております。|長野県下伊那郡|下條村|飯田市|長野県下伊那郡泰阜村|阿智村|阿南町',
+    siteUrl: 'https://momenyamoter.gatsbyjs.io/',
+    author: '',
+    twitter: '',
     adsense: '',
   },
   pathPrefix: '/',
@@ -107,28 +108,12 @@ module.exports = {
           'IGQVJVRmRxYmpXc0lsQTAyUENIZADNDWFc3b1JDb1c2N091YzlpczY0c1hjd0l2MHBPMFZAHbU50b1lBRE50Wm56dzRTWlYyVW9BZAWtpemdFckJibWhxQnd4dWdhYW80WmNPaURQQ05kT3NRNHVzUVRUcgZDZD',
       },
     },
-    // {
-    //   resolve: `gatsby-source-instagram`,
-    //   options: {
-    //     // access_token:
-    //     //   'EAA5VPI2jjFkBAI6tW8jiCKVZCeRZBxjVSSJXWclZCTqFM1sbBZA1xL8i3ULuspgZCMHrrx9E07BRDSrqZCYoJRTzPgG341DbZA4KdKTgigR1yIe2QvNxyTHxqLyx4ZAj0S5oDMeMRzZC9YFm8CdC9DFwZAjRda0MvXr4SKzbMSYY8424petZBMx0D3sZCwMY4J6tOfMZD',
-    //     // access_token:
-    //     //   'EAA5VPI2jjFkBAPkqjyRpq2ZBNuxZAgpQm2nX5ID78UfST2AP7NYi4Wa626x02AebEgZAfZBYCpgIOGpVcjBP3ELwduyDpRuWGyRcvuRyIZBeXOs8mxmyZCoUZACUxmCK2XBDPZAsgmz1FGZBCbLzKwMIUlIjUYyoYovqhFvpXzC4iX0FCWLuR6jJHfj1t0xtHs2sZD',
-    //     // username: `47346732356`,
-    //     username: `4827544420`,
-    //     access_token:
-    //       'EAA5VPI2jjFkBAI6tW8jiCKVZCeRZBxjVSSJXWclZCTqFM1sbBZA1xL8i3ULuspgZCMHrrx9E07BRDSrqZCYoJRTzPgG341DbZA4KdKTgigR1yIe2QvNxyTHxqLyx4ZAj0S5oDMeMRzZC9YFm8CdC9DFwZAjRda0MvXr4SKzbMSYY8424petZBMx0D3sZCwMY4J6tOfMZD',
-    //     // access_token:
-    //     //   'EAAN01aeturMBABqZBZBLVZCVoRvEIVHaAB9EkLq4z9czCZAYFKOXIC9A48yzcxxDPfQlyevZA5QSpspsnmVci8jMtFPC8NKc3B54rcVYudiO5ebioj1tNx8iV9MAIRxjiIdi1NUzntqU9H2yZAHwFlmoZAjcdt5gmZAYoepMwDMtsNjcyPTEIbZChyKdNJgqvzllkjur2BLk18AZDZD',
-    //     instagram_id: '17841404812603443',
-
-    //     // access_token:
-    //     //   'EAAN01aeturMBABqZBZBLVZCVoRvEIVHaAB9EkLq4z9czCZAYFKOXIC9A48yzcxxDPfQlyevZA5QSpspsnmVci8jMtFPC8NKc3B54rcVYudiO5ebioj1tNx8iV9MAIRxjiIdi1NUzntqU9H2yZAHwFlmoZAjcdt5gmZAYoepMwDMtsNjcyPTEIbZChyKdNJgqvzllkjur2BLk18AZDZD',
-    //     // instagram_id: '17841404812603443',
-    //     paginate: 100,
-    //     maxPosts: 1000,
-    //     hashtags: true,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `tomato`,
+        showSpinner: false,
+      },
+    },
   ],
 }

@@ -3,9 +3,10 @@ import { Link } from 'gatsby'
 import React from 'react'
 import { useInView } from 'react-intersection-observer'
 //@ts-ignore
-import Image from 'src/assets/images/saiyo.webp'
+// import Image from 'src/assets/images/saiyo.webp'
 import HrDiv from 'src/components/tools/hr-div'
 import './service.scss'
+import { StaticImage } from 'gatsby-plugin-image'
 
 interface Props {
   children?: React.ReactNode
@@ -43,7 +44,12 @@ const Corona: React.FC = () => {
           </div>
         </div>
         <Link to="saiyo">
-          <img src={Image} className="w-100 my-3" />
+          <StaticImage
+            src="../../assets/images/saiyo.jpg"
+            alt="gasoline stand"
+            placeholder="blurred"
+            className="w-100 my-3"
+          />
         </Link>
         <div className="row ">
           <MotionBox>
