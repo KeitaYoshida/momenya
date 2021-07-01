@@ -36,8 +36,7 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
         },
         {
           name: 'google-site-verification',
-          content:
-            'google-site-verification=4SvqeHp4IP9XYTYPfUCb4RxN9APyx3UwmghLgbw-w-k',
+          content: '9ijHUUGH6b3zlqwEovJ5RXbCEI_4solYznQ99ka2DpU',
         },
         // {
         //   property: 'og:image',
