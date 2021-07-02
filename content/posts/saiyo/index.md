@@ -20,6 +20,38 @@ tags:
 
 <hr class="in-post-line" />
 
+<form
+  action="https://formspree.io/f/xnqlzgvz"
+  method="POST"
+>
+<div>
+  <input type="text" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="お名前" name="name" />
+</div>
+<div>
+  <input type="text" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="お名前(ふりがな)" name="name-kana" />
+</div>
+<div>
+  <input type="mail" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="メールアドレス" name="e-mail" />
+</div>
+<div>
+  <input type="text" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="電話番号" name="tel" />
+</div>
+<div>
+  <input type="text" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="年齢" name="age" />
+</div>
+<div>
+  <input type="text" style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="性別" name="gend" />
+</div>
+<div>
+  <textarea style="width:80%;margin:0 auto;margin-bottom:1rem;" placeholder="お申し込み内容" name="value" >
+  </textarea>
+</div>
+<input 
+  type="submit" 
+  value="お申し込み" 
+  style="width:80%;margin:0 auto;margin-bottom:1rem;background:none;border:1px solid grey; padding: 1rem 0;" />
+</form>
+
 ## お問い合わせ
 <hr class="in-post-line" />
 
