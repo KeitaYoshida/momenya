@@ -1,5 +1,5 @@
 ---
-title: '洗車　機械洗車・手洗い洗車'
+title: '採用情報'
 layout: post
 path: '/saiyo/'
 image: ./saiyo.jpg
