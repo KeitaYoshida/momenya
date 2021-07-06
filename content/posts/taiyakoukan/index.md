@@ -23,7 +23,7 @@ tags:
   <img src="./momenya_taiya.JPG" />
 </div>
 
-<table width="640px" class="mt-6 mx-auto">
+<table width="100%" class="mt-6 mx-auto">
   <tr>
     <td class="px-3">
       <a href="https://tire.bridgestone.co.jp/" target="_blank">

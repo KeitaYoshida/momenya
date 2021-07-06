@@ -4,7 +4,7 @@ layout: post
 path: '/bankin/'
 image: ./bankin.jpg
 description: '小さなキズ・凹みから事故修理まで、丁寧な板金塗装でお客様の愛車を蘇らせます'
-category: Typography
+category: CARサービス
 tags:
   - 下條村
   - 飯田

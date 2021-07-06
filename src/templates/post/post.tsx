@@ -6,6 +6,7 @@ import ServiceList from 'src/components/service-list/service-list'
 import Adsense from '../../components/adsense/adsense'
 import Badge from '../../components/badge/badge'
 import Button from '../../components/button/button'
+// import Ins from 'src/components/AdSense'
 import './style.scss'
 
 const getDescription = (content: string): string => {
@@ -67,6 +68,7 @@ const Post: React.FC<Props> = ({ data, options }: Props) => {
           }}
         />
         {isMore && <Button path={path} label="MORE" primary={true} />}
+        {/* <Ins /> */}
         {!isIndex && (
           <div className="pt-8">
             <Adsense clientId={adsense} slotId="" format="auto" />

@@ -41,7 +41,7 @@ const ServiceInPage: React.FC = () => {
         <div className="row justify-content-center">
           <div className="col-10 col-md-6">
             <h3 className="color-primary fs-2 fs-lg-3">
-              トータルカーライフサポート.
+              トータルカーライフサポート
             </h3>
             <p className="px-lg-4 mt-3">
               ガソリンスタンドと修理工場、両施設を併設する私達だからこそできることがあります

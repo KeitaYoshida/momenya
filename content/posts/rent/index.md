@@ -4,7 +4,7 @@ layout: post
 path: '/rent/'
 image: ./rent.jpg
 description: '様々な用途のレンタカーも準備しています。お客様のライフスタイルに合わせてご用命ください'
-category: サービス
+category: CARサービス
 tags:
   - 下條村
   - 飯田

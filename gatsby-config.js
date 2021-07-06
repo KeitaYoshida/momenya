@@ -9,6 +9,7 @@ module.exports = {
     author: '',
     twitter: '',
     adsense: '',
+    icon: 'src/assets/images/momenya-logo.png',
   },
   pathPrefix: '/',
   plugins: [
@@ -113,6 +114,12 @@ module.exports = {
       options: {
         color: `tomato`,
         showSpinner: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `ca-pub-4144447566694088`,
       },
     },
   ],

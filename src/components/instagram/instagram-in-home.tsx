@@ -52,11 +52,7 @@ const Insta = () => {
           {
             //@ts-ignore
             instaPhotos.map((photo) => (
-              <a
-                key={photo.id}
-                href={`https://instagram.com/p/${photo.id}`}
-                target="_brake"
-              >
+              <a key={photo.id} href={`${photo.permalink}`} target="_brake">
                 <GatsbyImage
                   image={photo.gatsbyImageData}
                   className="img-size"

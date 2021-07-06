@@ -10,22 +10,22 @@ interface Props {
 const Footer: React.FC<Props> = ({ author, title }: Props) => (
   <div className="footer">
     <section className="footer-list">
-      <span>
+      <span className="d-inline-block">
         <a className="color-white" href="/info-kozin">
           個人情報取り扱い
         </a>
       </span>
-      <span>
+      <span className="d-inline-block">
         <a className="color-white" href="/info-kansen">
           感染症対策
         </a>
       </span>
-      <span>
+      <span className="d-inline-block">
         <a className="color-white" href="/saiyo">
           採用情報
         </a>
       </span>
-      <span>
+      <span className="d-inline-block">
         <a className="color-white" href="/otoiawase">
           お問い合わせ
         </a>

@@ -17,7 +17,7 @@ tags:
 ## 自動車保険
 お客様のカーライフが安心したものになるよう、適切なアドバイス、迅速な対応をします
 
-<table width="640px" class="mt-6 mx-auto">
+<table width="100%" class="mt-6 mx-auto">
   <tr>
     <td class="px-3">
       <a href="https://www.tokiomarine-nichido.co.jp/" target="_blank">

@@ -4,7 +4,7 @@ layout: post
 path: '/saiyo/'
 image: ./saiyo.jpg
 description: '私達は一緒に働けるメンバーを募集しています。下條村 ガソリンスタンド'
-category: モーターサービス
+category: CARサービス
 tags:
   - 飯田市
   - 下條村

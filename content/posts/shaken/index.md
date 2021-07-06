@@ -4,7 +4,7 @@ layout: post
 path: '/shaken/'
 image: ./shaken.jpg
 description: '自社工場内で点検・整備・検査までを一貫して行うことができる指定工場となっています。スムーズに車検を終えることができ、最短で１日で車検が完了します'
-category: Typography
+category: CARサービス
 tags:
   - 下條村
   - 飯田

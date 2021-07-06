@@ -38,10 +38,10 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
           name: 'google-site-verification',
           content: '9ijHUUGH6b3zlqwEovJ5RXbCEI_4solYznQ99ka2DpU',
         },
-        // {
-        //   property: 'og:image',
-        //   content: `${siteUrl}/img/profile.jpg`,
-        // },
+        {
+          property: 'og:image',
+          content: `${siteUrl}/img/momenya.jpg`,
+        },
       ]}
     ></Helmet>
   )

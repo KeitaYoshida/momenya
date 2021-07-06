@@ -4,7 +4,7 @@ layout: post
 path: '/sensha/'
 image: ./sensha.jpg
 description: '本格ボディコーティング、手洗い洗車、機械洗車、各種オプションメニューなど、充実した洗車ラインナップでお客様の愛車をワンランク上の美しさへと導きます'
-category: サービス
+category: CARサービス
 tags:
   - 飯田市
   - 下條村

@@ -9,6 +9,7 @@ const useInstagram = () => {
             id
             caption
             media_url
+            permalink
             localImage {
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
@@ -41,6 +42,7 @@ const useInstagram = () => {
         id: edge.node.id,
         caption: edge.node.caption,
         username: edge.node.username,
+        permalink: edge.node.permalink,
       }))
   )
 }

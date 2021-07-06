@@ -4,7 +4,7 @@ layout: post
 path: '/road/'
 image: ./road.jpg
 description: '故障・バッテリーあがり・ガス欠などのトラブルに作業スタッフが駆けつけます'
-category: Typography
+category: CARサービス
 tags:
   - 下條村
   - 飯田
