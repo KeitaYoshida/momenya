@@ -12,17 +12,21 @@ const sidebar = {
       type: 'spring',
       stiffness: 20,
       restDelta: 2,
+      // zIndex: 1,
+      display: 'block',
     },
   }),
   closed: (custom = { height: 1000, width: 200 }) => ({
     // clipPath: `circle(30px at 40px ${custom.width})`,
     // clipPath: `circle(25px at calc(100% - 28px) 28px`,
+    // zIndex: -1,
     clipPath: `circle(20px at calc(100% - 28px) 28px`,
     transition: {
       delay: 0.2,
       type: 'spring',
       stiffness: 400,
       damping: 40,
+      display: 'none',
     },
   }),
 }

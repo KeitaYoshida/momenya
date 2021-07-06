@@ -16,7 +16,6 @@ const variants = {
     transition: {
       staggerChildren: 0.05,
       staggerDirection: -1,
-      display: 'none',
     },
   },
 }
