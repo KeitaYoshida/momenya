@@ -35,6 +35,10 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
           content: siteDescription,
         },
         {
+          property: 'description',
+          content: siteDescription,
+        },
+        {
           name: 'google-site-verification',
           content: '9ijHUUGH6b3zlqwEovJ5RXbCEI_4solYznQ99ka2DpU',
         },
