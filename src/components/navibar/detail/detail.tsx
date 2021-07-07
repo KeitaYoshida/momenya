@@ -13,7 +13,6 @@ const sidebar = {
       stiffness: 20,
       restDelta: 2,
       // zIndex: 1,
-      display: 'block',
     },
   }),
   closed: (custom = { height: 1000, width: 200 }) => ({
@@ -26,7 +25,6 @@ const sidebar = {
       type: 'spring',
       stiffness: 400,
       damping: 40,
-      display: 'none',
     },
   }),
 }
