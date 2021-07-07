@@ -35,7 +35,7 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
           content: siteDescription,
         },
         {
-          property: 'description',
+          name: 'description',
           content: siteDescription,
         },
         {
