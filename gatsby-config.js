@@ -5,7 +5,7 @@ module.exports = {
     title: '木綿屋モーターサービス',
     description:
       'ガソリンスタンドと修理工場を併設し給油から洗車、修理、車検、レンタカー、販売まで、車のことなら木綿屋モーターサービスにお任せください。万が一のトラブルの際のレッカーサービスも行っております。|長野県下伊那郡|下條村|飯田市|長野県下伊那郡泰阜村|阿智村|阿南町',
-    siteUrl: 'https://momenyamoter.gatsbyjs.io/',
+    siteUrl: 'https://momenya-motor-service.com',
     author: '',
     twitter: '',
     adsense: '',
@@ -120,6 +120,21 @@ module.exports = {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
         publisherId: `ca-pub-4144447566694088`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://momenya-motor-service.com',
+        sitemap: 'https://momenya-motor-service.com/sitemap/sitemap-0.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`, // 追加
+      options: {
+        siteUrl: `https://momenya-motor-service.com`,
+        stripQueryString: true,
       },
     },
   ],
