@@ -701,6 +701,8 @@ type SitePluginPluginOptions = {
   readonly host: Maybe<Scalars['String']>;
   readonly sitemap: Maybe<Scalars['String']>;
   readonly policy: Maybe<ReadonlyArray<Maybe<SitePluginPluginOptionsPolicy>>>;
+  readonly siteUrl: Maybe<Scalars['String']>;
+  readonly stripQueryString: Maybe<Scalars['Boolean']>;
   readonly pathCheck: Maybe<Scalars['Boolean']>;
 };
 
@@ -2522,6 +2524,8 @@ type SitePluginPluginOptionsFilterInput = {
   readonly host: Maybe<StringQueryOperatorInput>;
   readonly sitemap: Maybe<StringQueryOperatorInput>;
   readonly policy: Maybe<SitePluginPluginOptionsPolicyFilterListInput>;
+  readonly siteUrl: Maybe<StringQueryOperatorInput>;
+  readonly stripQueryString: Maybe<BooleanQueryOperatorInput>;
   readonly pathCheck: Maybe<BooleanQueryOperatorInput>;
 };
 
@@ -2831,6 +2835,8 @@ type SitePageFieldsEnum =
   | 'pluginCreator.pluginOptions.policy'
   | 'pluginCreator.pluginOptions.policy.userAgent'
   | 'pluginCreator.pluginOptions.policy.allow'
+  | 'pluginCreator.pluginOptions.siteUrl'
+  | 'pluginCreator.pluginOptions.stripQueryString'
   | 'pluginCreator.pluginOptions.pathCheck'
   | 'pluginCreator.nodeAPIs'
   | 'pluginCreator.browserAPIs'
@@ -3504,6 +3510,8 @@ type SitePluginFieldsEnum =
   | 'pluginOptions.policy'
   | 'pluginOptions.policy.userAgent'
   | 'pluginOptions.policy.allow'
+  | 'pluginOptions.siteUrl'
+  | 'pluginOptions.stripQueryString'
   | 'pluginOptions.pathCheck'
   | 'nodeAPIs'
   | 'browserAPIs'
@@ -4526,19 +4534,6 @@ type Unnamed_1_Query = { readonly allInstagramContent: { readonly edges: Readonl
         & { readonly localImage: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }>, readonly album: Maybe<ReadonlyArray<Maybe<{ readonly localImage: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }>>> }
       ) }> } };
 
-type PostByPathQueryVariables = Exact<{
-  path: Scalars['String'];
-}>;
-
-
-type PostByPathQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }>, readonly post: Maybe<(
-    Pick<MarkdownRemark, 'id' | 'html'>
-    & { readonly frontmatter: Maybe<(
-      Pick<MarkdownRemarkFrontmatter, 'layout' | 'title' | 'path' | 'category' | 'tags' | 'description'>
-      & { readonly image: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
-    )> }
-  )> };
-
 type IndexQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -4569,5 +4564,18 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
+
+type PostByPathQueryVariables = Exact<{
+  path: Scalars['String'];
+}>;
+
+
+type PostByPathQuery = { readonly site: Maybe<{ readonly meta: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'siteUrl' | 'author' | 'twitter' | 'adsense'>> }>, readonly post: Maybe<(
+    Pick<MarkdownRemark, 'id' | 'html'>
+    & { readonly frontmatter: Maybe<(
+      Pick<MarkdownRemarkFrontmatter, 'layout' | 'title' | 'path' | 'category' | 'tags' | 'description'>
+      & { readonly image: Maybe<{ readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }> }
+    )> }
+  )> };
 
 }
