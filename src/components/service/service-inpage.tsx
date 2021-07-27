@@ -102,7 +102,7 @@ const ServiceInPage: React.FC = () => {
             <p className="mb-0 mt-3 px-3" data-zanim='{"delay":0.2}'>
               全メーカー全車種対応可
               <br />
-              車検・点検はもちろん、もしもの時はレッカーサービス（板金・修理）、レンタカー・保険も扱っています
+              車検・点検はもちろん、もしもの時はレッカーサービス（鈑金・修理）、レンタカー・保険も扱っています
             </p>
             <div className="d-inline-block info-box">
               <p className="my-0 pb-1 mt-2 fs--1 address-color">

@@ -32,25 +32,23 @@ tags:
 </table>
 
 <div class="mt-4">
-  
-</div>
-
-<div class="mt-4">
-  <img src="./m_hanbai03.jpg" />
+  <img src="./m_hanbai01.jpg" />
+  <img src="./m_hanbai02.jpg" />
 </div>
 
 ## オートローン・マイカーリース
 オートローン、マイカーリースも取り扱っています。お気軽にご相談ください
 
 <div class="mt-4">
-  <span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://www.orico.co.jp/loan/teikei/autoloan/lease/" target="_blank">オリコ</a></span>
-  <span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://www.jaccs-lease.jp/" target="_blank">ジャックス</a></span>
-  <span class="px-3 fs-3" style="color: #b3424a;border-bottom:1px solid #b3424a"><a href="https://lotopia.net/shinsya/" target="_blank">新車生活</a></span>
+  <span class="px-4 py-2 mx-2 fs-3" style="border-radius:10px; background: #c3525a"><a href="https://www.orico.co.jp/loan/teikei/autoloan/lease/" target="_blank" style="color:white;">オリコ</a></span>
+  <span class="px-4 py-2 mx-2 fs-3" style="border-radius:10px; background: #c3525a"><a href="https://www.jaccs-lease.jp/" target="_blank" style="color:white;">ジャックス</a></span>
+  <span class="px-4 py-2 mx-2 fs-3" style="border-radius:10px; background: #c3525a"><a href="https://lotopia.net/shinsya/" target="_blank" style="color:white;">新車生活</a></span>
 </div>
 
+## 新古車・中古車　在庫一覧
+
 <div class="mt-4">
-  <img src="./m_hanbai01.jpg" />
-  <img src="./m_hanbai02.jpg" />
+  <img src="./m_hanbai03.jpg" />
 </div>
 
 ## ご予約・お問い合わせはこちら
