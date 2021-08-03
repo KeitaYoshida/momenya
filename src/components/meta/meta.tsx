@@ -46,6 +46,14 @@ const Meta: React.FC<Props> = ({ site, title }: Props) => {
           property: 'og:image',
           content: `${siteUrl}/img/momenya.jpg`,
         },
+        {
+          name: 'robots',
+          content: 'all',
+        },
+        {
+          name: 'googlebot',
+          content: 'all',
+        },
       ]}
     ></Helmet>
   )

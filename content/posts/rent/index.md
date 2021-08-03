@@ -17,11 +17,17 @@ tags:
 
 <img src="./m_rent01.jpg" />
 <img src="./m-rent-01.jpg" />
+<p class="mb-4">１時間１，０００円から</p>
+
 <img src="./m-rent-02.jpg" />
+<p class="mb-4">６時間２，６４０円から</p>
+
 <img src="./m-rent-03.jpg" />
+<p class="mb-4">１日３，３００円から</p>
 
 
 <a href="https://rakunori.renta-navi.com/" class="fs-2" target="_blank">
+<img src="./logo.png" style="display:inlin-block"/>
 レンタルする</a>
 
 
