@@ -86,9 +86,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify',
       options: {
-        mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
-        mergeCachingHeaders: true,
+        // mergeSecurityHeaders: true,
+        // mergeLinkHeaders: true,
+        // mergeCachingHeaders: true,
+        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+        mergeSecurityHeaders: true, // boolean to turn off the default security headers
+        mergeCachingHeaders: true, // boolean to turn off the default caching headers
+        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+        generateMatchPathRewrites: true,
       },
     },
     'gatsby-plugin-catch-links',
@@ -102,13 +108,6 @@ module.exports = {
     'gatsby-plugin-typegen',
     'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
-    {
-      resolve: `gatsby-source-instagram-all`,
-      options: {
-        access_token:
-          'IGQVJVRmRxYmpXc0lsQTAyUENIZADNDWFc3b1JDb1c2N091YzlpczY0c1hjd0l2MHBPMFZAHbU50b1lBRE50Wm56dzRTWlYyVW9BZAWtpemdFckJibWhxQnd4dWdhYW80WmNPaURQQ05kT3NRNHVzUVRUcgZDZD',
-      },
-    },
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
