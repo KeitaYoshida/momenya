@@ -74,7 +74,7 @@ const ServiceInPage: React.FC = () => {
                 営業時間：月-土, 7:00-20:00
               </p>
               <p className="my-0 pb-1 fs--1 address-color">
-                （日曜・祝日は休業日）
+                （日祝日8:00-18:00）
               </p>
               <p className="my-0 pb-1 fs--1 address-color">
                 <a href="tel:0260272232">電話番号：0260-27-2232</a>
