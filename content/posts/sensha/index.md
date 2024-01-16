@@ -18,11 +18,11 @@ tags:
 ## 新型洗車機 2020年導入
 <img src="./auto.jpg">
 
-## VDSスーパードロップコーティング
+## LUXIA 7
 ### (ガラスコーティング)
 新車より美しいツヤが長期間持続。ガラス系の強固被膜で汚れから守り、愛車の価値が上がるコーティング
 <div style="padding-top:1rem;">
-  <img src="./momenya-vds-image.jpg"/>
+  <img src="./momenya-sensha.jpg" class="pt-3" />
 </div>
 
 ## クラスコートサラ
@@ -44,10 +44,6 @@ tags:
 塩カルや泥汚れなど、車の下側をスチーム洗浄します
 ### ヘッドライトクリーニング
 色あせや黄ばみを専用クリーナーでスッキリ除去します
-
-<div style="padding-top:1rem;">
-  <img src="./momenya-sensha.jpg" class="pt-3" />
-</div>
 
 ## ご予約・お問い合わせはこちら
 <a href="tel:0260272232"><span style="font-size:2rem;">☎ 0260-27-2232</span></a>
