@@ -5,8 +5,14 @@
   command = "npm run build"
 
 [build.environment]
-  # Node.jsバージョンを16に固定（undiciエラー回避のため）
-  NODE_VERSION = "16"
+  # Node.jsバージョンを18に戻す（Gatsby要件）
+  NODE_VERSION = "18"
+  # undiciエラー回避のための環境変数
+  NODE_OPTIONS = "--no-experimental-fetch"
+  # 追加の環境変数
+  GATSBY_CPU_COUNT = "2"
+  NPM_CONFIG_FETCH_RETRY_MINTIMEOUT = "20000"
+  NPM_CONFIG_FETCH_RETRY_MAXTIMEOUT = "120000"
 
 # Gatsbyプラグインを一時的に無効化（undiciエラー回避のため）
 # [[plugins]]
