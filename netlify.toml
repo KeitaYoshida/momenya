@@ -1,0 +1,11 @@
+[build]
+  # ビルドイメージをUbuntu 22.04 (Jammy)に指定
+  image = "ubuntu-22.04"
+
+[build.environment]
+  # Node.jsバージョンを18に固定（互換性のため）
+  NODE_VERSION = "18"
+
+# 既存の設定があれば追加
+[[plugins]]
+  package = "@netlify/plugin-gatsby"

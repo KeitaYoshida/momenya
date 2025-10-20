@@ -4,7 +4,7 @@
   "version": "3.0.0",
   "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "18.x"
   },
   "dependencies": {
     "@fontsource/noto-serif-jp": "^5.0.7",
