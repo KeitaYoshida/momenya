@@ -1,19 +1,17 @@
 [build]
-  # ビルドイメージをUbuntu 22.04 (Jammy)に指定
-  image = "ubuntu-22.04"
+  # ビルドイメージをUbuntu 20.04 (Focal)に戻す（安定性のため）
+  image = "ubuntu-20.04"
   # ビルドコマンドを指定
   command = "npm run build"
 
 [build.environment]
-  # Node.jsバージョンを18に戻す（Gatsby要件）
+  # Node.jsバージョンを18に設定（Gatsby要件）
   NODE_VERSION = "18"
-  # undiciエラー回避のための環境変数
-  NODE_OPTIONS = "--no-experimental-fetch"
-  # 追加の環境変数
+  # Gatsby設定
   GATSBY_CPU_COUNT = "2"
   NPM_CONFIG_FETCH_RETRY_MINTIMEOUT = "20000"
   NPM_CONFIG_FETCH_RETRY_MAXTIMEOUT = "120000"
 
-# Gatsbyプラグインを一時的に無効化（undiciエラー回避のため）
-# [[plugins]]
-#   package = "@netlify/plugin-gatsby"
+# Gatsbyプラグインを有効化（最新版でundiciエラーが修正されている可能性）
+[[plugins]]
+  package = "@netlify/plugin-gatsby"
