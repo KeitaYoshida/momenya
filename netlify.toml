@@ -5,8 +5,8 @@
   command = "npm run build"
 
 [build.environment]
-  # Node.jsバージョンを18に設定（Gatsby要件）
-  NODE_VERSION = "18"
+  # Node.jsバージョンを18.20以降に設定（Gatsby要件 + got/undici互換性）
+  NODE_VERSION = "18.20"
   # Gatsby設定
   GATSBY_CPU_COUNT = "2"
   NPM_CONFIG_FETCH_RETRY_MINTIMEOUT = "20000"
